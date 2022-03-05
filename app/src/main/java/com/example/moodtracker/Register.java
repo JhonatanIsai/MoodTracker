@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.example.moodtracker.R;
 
+import com.example.moodtracker.ui.login.LoginActivity;
 import com.example.moodtracker.ui.login.LoginViewModel;
 import com.example.moodtracker.ui.login.LoginViewModelFactory;
 import com.example.moodtracker.databinding.ActivityLoginBinding;
@@ -54,7 +55,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void changeActivity(){
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }
