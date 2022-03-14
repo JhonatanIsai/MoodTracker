@@ -1,19 +1,30 @@
 package com.example.moodtracker;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.moodtracker.ui.login.LoginActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Objects;
 
 
 public class RegisterUser extends AppCompatActivity implements View.OnClickListener {
@@ -113,45 +124,71 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
             editTextEmail.requestFocus();
             return;
         }
-        if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             editTextEmail.setError("The e-mail provided is invalid");
             editTextEmail.requestFocus();
             return;
         }
         // ** Checking the password is exist, is long enough
         // ** and of the password and verification match
-        if(email.isEmpty()){
+        if(password.isEmpty()){
             editTextPassword.setError("Password field is empty");
             editTextPassword.requestFocus();
             return;
         }
         //
-        if(email.length() < 6){
+        if(password.length() < 6){
             editTextPassword.setError("Password must longer than 6 characters");
             editTextPassword.requestFocus();
             return;
         }
-        if(password.isEmpty()){
-            editTextPasswordCheck.setError("You must verify your password");
-            editTextPasswordCheck.requestFocus();
-            return;
-        }
-        // Checking if the password and the verify password match
-        if(password != passwordVerify ){
-            editTextPasswordCheck.setError("Passwords do not match");
-            editTextPasswordCheck.requestFocus();
-            editTextPassword.requestFocus();
-            return;
-        }
-    }
+//        progressBar.setVisibility(View.VISIBLE);
 
-//    private void changeActivityToSignIN(){
-//        Intent intent = new Intent(this, LoginActivity.class);
-//        startActivity(intent);
-//    }
-//
-//    @Override
-//    public void onPointerCaptureChanged(boolean hasCapture) {
-//        super.onPointerCaptureChanged(hasCapture);
-//    }
+        // ** Creating new user FireBAse **
+        mAuth.createUserWithEmailAndPassword(email,password)
+                .addOnCompleteListener(task -> {
+                    if(task.isSuccessful()){
+                        // Creating new user object
+                        registerUserObj user = new registerUserObj(firstName,lastName,email);
+                        FirebaseDatabase.getInstance().getReference("Users")
+                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid())
+                                .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if(task.isSuccessful()){
+//                                    Log.e(TAG, "onComplete: Failed=" + task.getException().getMessage());
+                                    //Making the Toast and displaying if
+                                    // registered successfully
+                                    Toast.makeText(
+                                            RegisterUser.this,
+                                            "New user has been registered",
+                                            Toast.LENGTH_LONG).show();
+                                    // Get rid of the progress bar
+//                                    progressBar.setVisibility(View.GONE);
+                                }
+                                else{
+                                    // Showing error message as toast in the case
+                                    // the registration fails
+                                    Toast.makeText(
+                                            RegisterUser.this,
+                                            "Could not register at this time, try again later",
+                                            Toast.LENGTH_LONG).show();
+                                    // Get rig od the progress bar
+                                }
+//                                progressBar.setVisibility(View.GONE);
+
+                            }
+                        });
+                    }else{
+                        // Showing error message as toast in the case
+                        // the registration fails
+                        Toast.makeText(
+                                RegisterUser.this,
+                                "Could not register at this time, try again later",
+                                Toast.LENGTH_LONG).show();
+                        // Get rig od the progress bar
+//                        progressBar.setVisibility(View.GONE);
+                    }
+                });
+    }
 }
