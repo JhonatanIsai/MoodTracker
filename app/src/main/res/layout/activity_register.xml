@@ -17,64 +17,65 @@
 
     />
 
+
+
     ]]>
 
     <EditText
-        android:id="@+id/username"
-        android:layout_width="0dp"
+        android:id="@+id/register_Email"
+        android:layout_width="346dp"
         android:layout_height="60dp"
 
-        android:layout_marginTop="104dp"
-
+        android:layout_marginTop="8dp"
         android:backgroundTint="#1A73E9"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
+
         android:selectAllOnFocus="true"
-
         app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/register_last_name" />
 
     <EditText
-        android:id="@+id/first_name"
-        android:layout_width="379dp"
+        android:id="@+id/register_first_name"
+        android:layout_width="346dp"
         android:layout_height="60dp"
 
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#1A73E9"
         android:hint="First Name"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/register_logo" />
 
     <EditText
-        android:id="@+id/last_name"
-        android:layout_width="379dp"
+        android:id="@+id/register_last_name"
+        android:layout_width="346dp"
         android:layout_height="60dp"
 
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#1A73E9"
         android:hint="Last Name"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+        app:layout_constraintTop_toBottomOf="@+id/register_first_name" />
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="379dp"
-        android:layout_height="60dp"
+        android:id="@+id/register_password"
+        android:layout_width="346dp"
+        android:layout_height="51dp"
 
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#1A73E9"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
@@ -83,39 +84,40 @@
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+        app:layout_constraintTop_toBottomOf="@+id/register_Email" />
 
     <EditText
-        android:id="@+id/verify_password"
-        android:layout_width="379dp"
-        android:layout_height="60dp"
+        android:id="@+id/register_verify_password"
+        android:layout_width="346dp"
+        android:layout_height="56dp"
 
+        android:layout_marginTop="8dp"
         android:backgroundTint="#1A73E9"
         android:hint="Verify Password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintBottom_toTopOf="@+id/register_register_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintTop_toBottomOf="@+id/register_password"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="371dp"
-        android:layout_height="57dp"
+        android:id="@+id/register_register_button"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="164dp"
         android:background="@drawable/main_login_button"
-        android:enabled="false"
 
+        android:layout_marginTop="12dp"
         android:text="REGISTER"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
@@ -127,12 +129,13 @@
         android:layout_marginBottom="64dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintStart_toStartOf="@+id/register_password"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
     <!--    Buttons for sign in -->
+
 
     <Button
         android:id="@+id/googleButton"
@@ -140,9 +143,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="32dp"
 
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="32dp"
         android:height="6dp"
         android:background="@drawable/signin_alternative_button_gl"
         android:minWidth="150dp"
@@ -159,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="32dp"
         android:height="6dp"
         android:background="@drawable/signin_alternative_button_fb"
         android:minWidth="150dp"
@@ -170,23 +173,18 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/googleButton"
-        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintHorizontal_bias="0.362"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/register_logo"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-
-
+        android:layout_marginTop="28dp"
         android:text="Mood Tracker"
         android:textColor="#1A73E9"
         android:textSize="40dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -198,12 +196,13 @@
         android:layout_height="30dp"
 
 
+        android:layout_marginBottom="84dp"
+
+
         android:background="@drawable/forgot_password_button"
-
-
         android:maxWidth="180dp"
-        android:maxHeight="15dp"
 
+        android:maxHeight="15dp"
         android:text="Sign-In"
         android:textColor="@color/black"
         android:textSize="9dp"
@@ -212,8 +211,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintTop_toBottomOf="@+id/register_register_button"
+        app:layout_constraintVertical_bias="0.84" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

@@ -32,7 +32,7 @@
             android:label="@string/title_activity_side_menu"
             android:theme="@style/Theme.MoodTracker.NoActionBar" />
         <activity
-            android:name=".Register"
+            android:name=".RegisterUser"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -28,4 +28,10 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_data_visualisation">DataVisualisation</string>
+    <string name="Wellness_toolbox">Welnes_toolbox</string>
+    <string name="logs">logs</string>
+    <string name="menu_stats">stats</string>
+    <string name="menu_settings">menu_settings</string>
+    <string name="NavSquares" />
+    <string name="menu_moodSquares">Menu_moodSquares</string>
 </resources>
