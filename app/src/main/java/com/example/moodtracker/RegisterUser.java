@@ -40,6 +40,8 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
     //  For connecting with Fire base
     private FirebaseAuth mAuth;
 
+    private boolean userAdded;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +93,11 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.register_register_button:
                 registerUser();
+                if(userAdded){
+                    startActivity(new Intent(this,MainActivity.class));
+
+                }
+
                 break;
         }
     }
@@ -127,7 +134,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             editTextEmail.setError("The e-mail provided is invalid");
             editTextEmail.requestFocus();
-            return;
+            return ;
         }
         // ** Checking the password is exist, is long enough
         // ** and of the password and verification match
@@ -159,12 +166,12 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
 //                                    Log.e(TAG, "onComplete: Failed=" + task.getException().getMessage());
                                     //Making the Toast and displaying if
                                     // registered successfully
+                                    userAdded = true;
                                     Toast.makeText(
                                             RegisterUser.this,
                                             "New user has been registered",
                                             Toast.LENGTH_LONG).show();
-                                    // Get rid of the progress bar
-//                                    progressBar.setVisibility(View.GONE);
+
                                 }
                                 else{
                                     // Showing error message as toast in the case
@@ -173,6 +180,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                             RegisterUser.this,
                                             "Could not register at this time, try again later",
                                             Toast.LENGTH_LONG).show();
+                                    return;
                                     // Get rig od the progress bar
                                 }
 //                                progressBar.setVisibility(View.GONE);
@@ -190,5 +198,6 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
 //                        progressBar.setVisibility(View.GONE);
                     }
                 });
+
     }
 }
