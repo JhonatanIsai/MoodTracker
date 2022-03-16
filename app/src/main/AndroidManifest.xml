@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodTracker">
         <activity
+            android:name=".ui.MoodSquares"
+            android:exported="false" />
+        <activity
             android:name=".DataVisualisation"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"

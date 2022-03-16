@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MoodSquares">
+
+    <!--  ********** Main Linear Layout **********-->
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--  ****************** Top Horizontal Layout ******************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:orientation="horizontal">
+
+            <!--  ********** Yellow Love ********** -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#FFC107" >
+
+                <TextView
+                    android:id="@+id/yellow_love_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Love"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <!--  ********** Green Joy **********-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#52B356" >
+
+                <TextView
+                    android:id="@+id/green_joy_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joy"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <!--  ****************** Middle Horizontal Layout ****************** -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:orientation="horizontal">
+
+            <!--  ********** Blue Surprise **********-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#03A9F4" >
+
+                <TextView
+                    android:id="@+id/blue_surprise_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Surprise"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <!--  ********** Red Anger **********-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#E91E63" >
+
+                <TextView
+                    android:id="@+id/red_anger_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anger"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!--  ****************** Bottom Horizontal Layout ****************** -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:orientation="horizontal">
+
+            <!--  ********** Purple Sadness **********-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#673AB7" >
+
+                <TextView
+                    android:id="@+id/purple_sadness_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sadness"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <!--  ********** Orange Fear **********-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#FF5722" >
+
+                <TextView
+                    android:id="@+id/orange_fear_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fear"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
