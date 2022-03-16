@@ -34,4 +34,5 @@
     <string name="menu_settings">menu_settings</string>
     <string name="NavSquares" />
     <string name="menu_moodSquares">Menu_moodSquares</string>
+    <string name="square_colors">square colors</string>
 </resources>

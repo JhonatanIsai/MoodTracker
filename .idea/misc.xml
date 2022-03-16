@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/signin_alternative_button_gl.xml" value="0.2885" />
+        <entry key="app/src/main/res/drawable/color_squares_img.xml" value="0.295" />
         <entry key="app/src/main/res/drawable/forgot_password_button.xml" value="0.2885" />
         <entry key="app/src/main/res/drawable/home_drawable_icon.xml" value="0.2275" />
         <entry key="app/src/main/res/drawable/home_icon_background.xml" value="0.1325" />

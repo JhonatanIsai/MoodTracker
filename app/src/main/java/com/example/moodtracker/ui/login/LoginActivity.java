@@ -68,7 +68,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(this, RegisterUser.class));
                 break;
             case R.id.login_login_button:
-                userLogin();
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//                userLogin();
                 break;
         }
     }
