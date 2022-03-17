@@ -1,16 +1,14 @@
-package com.example.moodtracker.ui;
+package com.example.moodtracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.moodtracker.R;
-
-public class MoodSquares extends AppCompatActivity {
+public class MoodSquaresActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mood_squares);
+        setContentView(R.layout.activity_mood_squares2);
     }
 }

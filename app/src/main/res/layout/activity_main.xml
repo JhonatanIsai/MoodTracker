@@ -16,6 +16,7 @@
         tools:ignore="MissingConstraints">
 
         <FrameLayout
+            android:id="@+id/moodSquare_parent"
             android:layout_width="match_parent"
             android:layout_height="332dp"
             android:background="@color/teal_200">
@@ -24,9 +25,9 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/square_colors"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/color_squares"
-                android:contentDescription="@string/square_colors" />
+                app:srcCompat="@drawable/color_squares" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -69,7 +70,7 @@
                     android:textColor="@color/white"
                     android:textSize="34dp"
                     android:textFontWeight="@integer/material_motion_duration_long_1"
-                    android:text="@string/Wellness_toolbox" />
+                    android:text="Wellness Toolbox" />
             </androidx.cardview.widget.CardView>
             <!-- ********* Logbook area ********* -->
             <androidx.cardview.widget.CardView
