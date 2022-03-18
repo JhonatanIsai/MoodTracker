@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodTracker">
         <activity
+            android:name=".LoveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".love.LoveActivity"
+            android:exported="false" />
+        <activity
             android:name=".MoodSquaresActivity"
             android:exported="false" />
         <activity

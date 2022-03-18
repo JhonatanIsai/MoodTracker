@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- ***************************************************************
+
+    For questions about the code in this file ask
+    File created by jhonatan
+
+
+    ***************************************************************
+-->
+
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,6 +34,8 @@
 
             <!--  ********** Yellow Love ********** -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/yellow_love_view_moodSquares"
+
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="#FFC107" >
@@ -42,6 +53,7 @@
 
             <!--  ********** Green Joy **********-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/green_joy_view_moodSquares"
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="#52B356" >
@@ -68,6 +80,7 @@
 
             <!--  ********** Blue Surprise **********-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/surprise_blue_view_moodSquares"
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="#03A9F4" >
@@ -85,6 +98,7 @@
 
             <!--  ********** Red Anger **********-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/red_anger_view_moodSquares"
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="#E91E63" >
@@ -109,6 +123,7 @@
 
             <!--  ********** Purple Sadness **********-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/purple_sadness_view_moodSquares"
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="#673AB7" >
@@ -126,6 +141,7 @@
 
             <!--  ********** Orange Fear **********-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/orange_fear_view_moodSquares"
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
                 app:cardBackgroundColor="#FF5722" >

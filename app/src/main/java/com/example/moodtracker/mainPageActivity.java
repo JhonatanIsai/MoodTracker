@@ -1,3 +1,8 @@
+/** ************************************************************************
+ * For questions about code and other stuff regarding this file ask Jhonatan
+ * *************************************************************************
+ *  */
+
 package com.example.moodtracker;
 
 import android.os.Bundle;
