@@ -44,4 +44,23 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="love">Love</string>
+    <string name="joy">Joy</string>
+    <string name="surprise">Surprise</string>
+    <string name="anger">Anger</string>
+    <string name="sadness">Sadness</string>
+    <string name="fear">Fear</string>
+    <string name="enthralled">Enthralled</string>
+    <string name="elation">Elation</string>
+    <string name="enthusiastic">Enthusiastic</string>
+    <string name="optimistic">Optimistic</string>
+    <string name="proud">Proud</string>
+    <string name="cheerful">Cheerful</string>
+    <string name="happy">Happy</string>
+    <string name="content">Content</string>
+    <string name="stuuned">Stuuned</string>
+    <string name="confused">Confused</string>
+    <string name="amazed">Amazed</string>
+    <string name="stunned">Stunned</string>
+    <string name="stuned">stuned</string>
 </resources>

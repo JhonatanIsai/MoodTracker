@@ -9,11 +9,7 @@ import android.view.View;
 public class LoveActivity extends AppCompatActivity implements View.OnClickListener {
     private View
             peacefull_section,
-            tenderness_section,
-            desire_section,
-            longing_section,
-            affectionate_section;
-
+            tenderness_section;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +32,7 @@ public class LoveActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.love_peaceful_menu2:
                 startActivity(new Intent(this, MoodSquaresActivity.class));
+                break;
         }
 
     }

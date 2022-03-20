@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.moodtracker">
 
     <application
@@ -10,16 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodTracker">
         <activity
+            android:name=".SurpriseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoyActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoveActivity"
             android:exported="false" />
         <activity
-            android:name=".love.LoveActivity"
-            android:exported="false" />
-        <activity
             android:name=".MoodSquaresActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MoodSquares"
             android:exported="false" />
         <activity
             android:name=".DataVisualisation"
@@ -27,17 +28,7 @@
             android:exported="false"
             android:label="@string/title_activity_data_visualisation"
             android:theme="@style/Theme.MoodTracker.Fullscreen" />
-        <activity
-            android:name=".MoodSqaures"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/title_activity_mood_sqaures"
-            android:theme="@style/Theme.MoodTracker.Fullscreen" />
-        <activity
-            android:name=".mainPageActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main_page"
-            android:theme="@style/Theme.MoodTracker.NoActionBar" />
+
         <activity
             android:name=".SideMenuActivity"
             android:exported="false"

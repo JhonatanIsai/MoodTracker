@@ -18,7 +18,7 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_wellness_toolbox"
-            android:icon="@drawable/home_icon_background"
+
             android:title="@string/Wellness_toolbox" />
         <item
             android:id="@+id/nav_logs"

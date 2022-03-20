@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         colorSquares = findViewById(R.id.moodSquare_parent);
         colorSquares.setOnClickListener(this);
     }
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.moodSquare_parent:
                 startActivity(new Intent(this, MoodSquaresActivity.class));
+                break;
         }
 
     }

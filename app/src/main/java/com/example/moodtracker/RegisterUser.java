@@ -94,6 +94,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
             // May need to make a different button for banner?
             case R.id.register_logo:
                 startActivity(new Intent(this,MainActivity.class));
+                break;
             case R.id.signin_from_register:
                 startActivity(new Intent(this,LoginActivity.class));
                 break;

@@ -6,61 +6,63 @@
 package com.example.moodtracker;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MoodSquaresActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private View
-            yello_love,
-            green_joy,
-            blue_surprise,
-            red_anger,
-            purple_sadness,
-            orange_fear;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood_squares2);
 
-        // Initiating variables for clickable color squares.
-        yello_love = findViewById(R.id.yellow_love_view_moodSquares);
+        // ***************  Initiating variables for clickable color squares. **************
+        // Clickable area for mood love, color: yellow
+        Button yello_love = findViewById(R.id.mood_square_love_button);
         yello_love.setOnClickListener(this);
 
-        green_joy = findViewById(R.id.green_joy_view_moodSquares);
+        // clickable area mood joy, color: green
+        Button green_joy = findViewById(R.id.mood_square_joy_button);
         green_joy.setOnClickListener(this);
-
-        blue_surprise = findViewById(R.id.surprise_blue_view_moodSquares);
+        // clickable area mood surprise, color:blue
+        Button blue_surprise = findViewById(R.id.mood_square_surprise_button);
         blue_surprise.setOnClickListener(this);
 
-        red_anger = findViewById(R.id.red_anger_view_moodSquares);
+        // clickable area mood anger, color: red
+        Button red_anger = findViewById(R.id.mood_square_anger_button);
         red_anger.setOnClickListener(this);
 
-        purple_sadness = findViewById(R.id.purple_sadness_view_moodSquares);
+        // clickable area mood sadness, color: purple
+        Button purple_sadness = findViewById(R.id.mood_square_sadness_button);
         purple_sadness.setOnClickListener(this);
 
-        red_anger = findViewById(R.id.red_anger_view_moodSquares);
-        red_anger.setOnClickListener(this);
+        // clickable area mood fear, color: orange
+        View orange_fear = findViewById(R.id.mood_square_fear_button);
+        orange_fear.setOnClickListener(this);
     }
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
 
-        // I made all of this to redirect to the same activty because i have only made one so far
+        // I made all of this to redirect to the same activity because i have only made one so far
         switch (view.getId()){
-            case R.id.yellow_love_view_moodSquares:
-                startActivity(new Intent(this, LoveActivity.class));
-            case R.id.green_joy_view_moodSquares:
-                startActivity(new Intent(this, LoveActivity.class));
-            case R.id.surprise_blue_view_moodSquares:
-                startActivity(new Intent(this, LoveActivity.class));
-            case R.id.red_anger_view_moodSquares:
-                startActivity(new Intent(this, LoveActivity.class));
-            case R.id.orange_fear_view_moodSquares:
-                startActivity(new Intent(this, LoveActivity.class));
+            case R.id.mood_square_love_button:
+//                startActivity(new Intent(MoodSquaresActivity.this, JoyActivity.class));
+                startActivity(new Intent(MoodSquaresActivity.this, LoveActivity.class));
+                break;
 
+            case R.id.mood_square_joy_button:
+                startActivity(new Intent(MoodSquaresActivity.this, JoyActivity.class));
+                break;
+
+            case R.id.mood_square_surprise_button:
+                startActivity(new Intent(MoodSquaresActivity.this, SurpriseActivity.class));
+                break;
         }
 
     }

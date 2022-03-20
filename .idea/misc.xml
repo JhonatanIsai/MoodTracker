@@ -18,15 +18,24 @@
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.30806010928961747" />
         <entry key="app/src/main/res/layout/activity_data_visualisation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_joy.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.23850574712643677" />
         <entry key="app/src/main/res/layout/activity_love.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/activity_love_sub_menu.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2018743667679838" />
+        <entry key="app/src/main/res/layout/activity_main_activitym.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/activity_main_page.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_mood_sqaures.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_mood_squares.xml" value="0.17231638418079095" />
-        <entry key="app/src/main/res/layout/activity_mood_squares2.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/layout/activity_mood_squares2.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_moods.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/activity_peaceful.xml" value="0.2911458333333333" />
+        <entry key="app/src/main/res/layout/activity_peacefull.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.35733695652173914" />
         <entry key="app/src/main/res/layout/activity_side_menu.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_surprise.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_tender.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/app_bar_side_menu.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/content_love.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/content_side_menu.xml" value="0.19010416666666666" />
@@ -35,7 +44,9 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/fragment_main_page.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/layout/love/peaceful/peaceful.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/nav_header_side_menu.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/layout/peaceful /activity_peaceful.xml" value="0.1" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
         <entry key="app/src/main/res/menu/side_menu.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/home_icon.xml" value="0.1" />
