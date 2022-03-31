@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodTracker">
         <activity
+            android:name=".Activity_love_peaceful"
+            android:exported="false" />
+        <activity
             android:name=".SurpriseActivity"
             android:exported="false" />
         <activity
@@ -28,7 +31,6 @@
             android:exported="false"
             android:label="@string/title_activity_data_visualisation"
             android:theme="@style/Theme.MoodTracker.Fullscreen" />
-
         <activity
             android:name=".SideMenuActivity"
             android:exported="false"

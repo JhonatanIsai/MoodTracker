@@ -58,9 +58,31 @@
     <string name="cheerful">Cheerful</string>
     <string name="happy">Happy</string>
     <string name="content">Content</string>
-    <string name="stuuned">Stuuned</string>
+    <string name="stuuned">Stunned</string>
     <string name="confused">Confused</string>
     <string name="amazed">Amazed</string>
     <string name="stunned">Stunned</string>
     <string name="stuned">stuned</string>
+
+<!--    Strings for the 2nd submenu of love
+        The outer ring on the mood circle
+
+        -->
+    <string name="relieved">Relieved</string>
+    <string name="satisfied">Satisfied</string>
+
+    <string name="compassionate">Compassionate</string>
+    <string name="caring">Caring</string>
+
+    <string name="infatuation">Infatuation</string>
+    <string name="passion">Passion</string>
+
+    <string name="attracted">Attracted</string>
+    <string name="sentimental">Sentimental</string>
+
+    <string name="fondness">Fondness</string>
+    <string name="romantic">Romantic</string>
+
+
+
 </resources>

@@ -12,4 +12,22 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+
+<!-- Colors for the other shell of love sub menus
+-->
+    <color name="satisfied">#f0c7b3</color>
+    <color name="relived">#fcc799</color>
+
+    <color name="compassionate">#fee0a0</color>
+    <color name="caring">#fed992</color>
+
+    <color name="infatuation">#faf29e</color>
+    <color name="passion">#fdee8f</color>
+
+    <color name="attracted">#fff6b1</color>
+    <color name="sentimental">#fbf49c</color>
+
+    <color name="fondness">#fcf7bf</color>
+    <color name="romantic">#fcf4ac</color>
+
 </resources>
