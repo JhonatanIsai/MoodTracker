@@ -30,4 +30,31 @@
     <color name="fondness">#fcf7bf</color>
     <color name="romantic">#fcf4ac</color>
 
+
+
+
+<!--    Color for the Joy sub menu-->
+    <color name="rapture">#f5f7c6</color>
+    <color name="enchanted">#ecf0b5</color>
+
+    <color name="jubilation">#f2f4c3</color>
+    <color name="euphoric">#ecf0b5</color>
+
+    <color name="zeal">#e3f0b8</color>
+    <color name="exited">#dceba8</color>
+
+    <color name="hopeful">#e0eeb0</color>
+    <color name="eager">#d6e99a</color>
+
+    <color name="illustrious">#d5e9aa</color>
+    <color name="triumphant">#c6e69d</color>
+
+    <color name="blissful">#cbe8b0</color>
+    <color name="jovial">#b8e19b</color>
+
+    <color name="delighted">#bce2af</color>
+    <color name="amused">#acdd9c</color>
+
+    <color name="satisfied2">#bde4b8</color>
+    <color name="pleased">#aadca7</color>
 </resources>

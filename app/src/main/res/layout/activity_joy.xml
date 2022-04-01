@@ -79,7 +79,7 @@
             app:cardBackgroundColor="#00FF38">
 
             <Button
-                android:id="@+id/love_longing_textView_menu2"
+                android:id="@+id/joy_optimistic_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"

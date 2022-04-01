@@ -79,10 +79,7 @@ public class LoveActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(affectionate);
                 break;
 
+
         }
-
     }
-
-
-
 }

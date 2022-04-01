@@ -1,17 +1,33 @@
 package com.example.moodtracker;
 
+import static com.example.moodtracker.R.color.amused;
 import static com.example.moodtracker.R.color.attracted;
+import static com.example.moodtracker.R.color.blissful;
 import static com.example.moodtracker.R.color.caring;
 import static com.example.moodtracker.R.color.compassionate;
+import static com.example.moodtracker.R.color.delighted;
+import static com.example.moodtracker.R.color.eager;
+import static com.example.moodtracker.R.color.enchanted;
+import static com.example.moodtracker.R.color.euphoric;
+import static com.example.moodtracker.R.color.exited;
 import static com.example.moodtracker.R.color.fondness;
+import static com.example.moodtracker.R.color.hopeful;
+import static com.example.moodtracker.R.color.illustrious;
 import static com.example.moodtracker.R.color.infatuation;
+import static com.example.moodtracker.R.color.jovial;
+import static com.example.moodtracker.R.color.jubilation;
 import static com.example.moodtracker.R.color.passion;
+import static com.example.moodtracker.R.color.pleased;
+import static com.example.moodtracker.R.color.rapture;
 import static com.example.moodtracker.R.color.relived;
 import static com.example.moodtracker.R.color.romantic;
 import static com.example.moodtracker.R.color.satisfied;
+import static com.example.moodtracker.R.color.satisfied2;
 import static com.example.moodtracker.R.color.sentimental;
 import static com.example.moodtracker.R.color.teal_200;
 import static com.example.moodtracker.R.color.purple_700;
+import static com.example.moodtracker.R.color.triumphant;
+import static com.example.moodtracker.R.color.zeal;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -53,9 +69,20 @@ public class Activity_love_peaceful extends AppCompatActivity {
     }
 
 
+    /** This functions will change the text and colors of the file.
+     * it will take string from the files of the second sub menu in the mood circle,
+     * it will pass the string and with a switch the desired changes will be made.
+     *
+     * This files will changes the colors and names of the entire outer ring of the mood circle.
+     * it will work for all the moods.
+     * */
     private void moodChosen(){
         if(submenuMood != null){
             switch (submenuMood){
+
+/**
+ * This first section will make the changes pertaining to the moods in the LOVE submenu.
+ * */
                 case "peaceful":
                     topCard.setBackgroundColor(getResources().getColor(relived));
                     topCardText.setText(R.string.relieved);
@@ -95,6 +122,76 @@ public class Activity_love_peaceful extends AppCompatActivity {
                     bottomCard.setBackgroundColor(getResources().getColor(romantic));
                     bottomCardText.setText(R.string.romantic);
                     break;
+/**
+ * This first section will make the changes pertaining to the moods in the JOY submenu.
+ * */
+                case "enthralled":
+                    topCard.setBackgroundColor(getResources().getColor(rapture));
+                    topCardText.setText(R.string.rapture);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(enchanted));
+                    bottomCardText.setText(R.string.enchanted);
+                    break;
+
+                case "elation":
+                    topCard.setBackgroundColor(getResources().getColor(jubilation));
+                    topCardText.setText(R.string.jubilation);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(euphoric));
+                    bottomCardText.setText(R.string.euphoric);
+                    break;
+
+                case "enthusiastic":
+                    topCard.setBackgroundColor(getResources().getColor(zeal));
+                    topCardText.setText(R.string.zeal);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(exited));
+                    bottomCardText.setText(R.string.exited);
+                    break;
+
+                case "optimistic":
+                    topCard.setBackgroundColor(getResources().getColor(hopeful));
+                    topCardText.setText(R.string.hopeful);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(eager));
+                    bottomCardText.setText(R.string.eager);
+                    break;
+
+                case "proud":
+                    topCard.setBackgroundColor(getResources().getColor(illustrious));
+                    topCardText.setText(R.string.illustrious);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(triumphant));
+                    bottomCardText.setText(R.string.triumphant);
+                    break;
+
+
+                case "cheerful":
+                    topCard.setBackgroundColor(getResources().getColor(blissful));
+                    topCardText.setText(R.string.blissful);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(jovial));
+                    bottomCardText.setText(R.string.jovial);
+                    break;
+
+                case "happy":
+                    topCard.setBackgroundColor(getResources().getColor(delighted));
+                    topCardText.setText(R.string.delighted);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(amused));
+                    bottomCardText.setText(R.string.amused);
+                    break;
+
+                case "content":
+                    topCard.setBackgroundColor(getResources().getColor(satisfied2));
+                    topCardText.setText(R.string.satisfied);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(pleased));
+                    bottomCardText.setText(R.string.pleased);
+                    break;
+
+
+
             }
 
 

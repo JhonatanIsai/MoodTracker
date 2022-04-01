@@ -64,7 +64,7 @@
     <string name="stunned">Stunned</string>
     <string name="stuned">stuned</string>
 
-<!--    Strings for the 2nd submenu of love
+<!--    Strings for the 2nd submenu of LOVE
         The outer ring on the mood circle
 
         -->
@@ -82,6 +82,36 @@
 
     <string name="fondness">Fondness</string>
     <string name="romantic">Romantic</string>
+
+
+    <!--    Strings for the 2nd submenu of JOY
+            The outer ring on the mood circle
+
+            -->
+    <string name="rapture">Rapture</string>
+    <string name="enchanted">Enchanted</string>
+
+    <string name="jubilation">Jubilation</string>
+    <string name="euphoric">Caring</string>
+
+    <string name="zeal">Zeal</string>
+    <string name="exited">Exited</string>
+
+    <string name="hopeful">Hopeful</string>
+    <string name="eager">Eager</string>
+
+    <string name="illustrious">Illustrious</string>
+    <string name="triumphant">Triumphant</string>
+
+
+    <string name="blissful">Blissful</string>
+    <string name="jovial">Jovial</string>
+
+    <string name="delighted">Delighted</string>
+    <string name="amused">Amused</string>
+
+
+    <string name="pleased">Pleased</string>
 
 
 
