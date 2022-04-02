@@ -57,4 +57,58 @@
 
     <color name="satisfied2">#bde4b8</color>
     <color name="pleased">#aadca7</color>
+
+<!--    Colors for Surprise outer edge-->
+
+    <color name="touched">#bbe5d1</color>
+    <color name="stimulated">#abdfc8</color>
+
+    <color name="astounded">#caeadb</color>
+    <color name="speechless">#b9e6d2</color>
+
+    <color name="awe_struck">#cdede8</color>
+    <color name="astonished">#b9e8e2</color>
+
+    <color name="perplexed">#cee8e5</color>
+    <color name="disillusioned">#bee3dc</color>
+
+    <color name="dismayed">#c4eaed</color>
+    <color name="shocked">#b6e3e9</color>
+
+
+    <!-- Sadness  -->
+    <color name="powerless">#C6E5E8</color>
+    <color name="grief">#B5DAE2</color>
+
+    <color name="lonely">#CAE2EE</color>
+    <color name="isolated">#B7D4E4</color>
+
+    <color name="guilty">#C5D6EA</color>
+    <color name="regretful">#BACAE4</color>
+
+    <color name="displeased">#C0C5E3</color>
+    <color name="dismayed2">#B1B4DD</color>
+
+    <color name="sorrow">#C7C2E2</color>
+    <color name="depressed">#B8ADD8</color>
+
+    <color name="hurt">#C2B8DA</color>
+    <color name="Agony">#B3A6D4</color>
+
+    <!-- Anger-->
+    <color name="revolt">#C8A3C5</color>
+    <color name="contempt">#C394C2</color>
+
+    <color name="jealous">#D8A4CB</color>
+    <color name="resentful">#D191C5</color>
+
+    <color name="Aggravated">#E7A2CE</color>
+    <color name="annoyed">#DE95C3</color>
+
+    <color name="frustrated">#EF9EC7</color>
+    <color name="agitated">#E990BE</color>
+
+    <color name="hostile">#F69BC4</color>
+    <color name="hate">#F48FB7</color>
+
 </resources>

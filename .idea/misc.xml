@@ -18,7 +18,7 @@
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.30806010928961747" />
         <entry key="app/src/main/res/layout/activity_data_visualisation.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_joy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_joy.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.23850574712643677" />
         <entry key="app/src/main/res/layout/activity_love.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/activity_love_peaceful.xml" value="0.1" />
@@ -35,7 +35,8 @@
         <entry key="app/src/main/res/layout/activity_peacefull.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.35733695652173914" />
         <entry key="app/src/main/res/layout/activity_side_menu.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_surprise.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_surprise.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_surprise2.xml" value="0.41510416666666666" />
         <entry key="app/src/main/res/layout/activity_tender.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/app_bar_side_menu.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/content_love.xml" value="0.22083333333333333" />

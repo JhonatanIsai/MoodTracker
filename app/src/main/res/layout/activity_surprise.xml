@@ -24,7 +24,7 @@
 
 
             <Button
-                android:id="@+id/joy_enthralled_textView_menu2"
+                android:id="@+id/surprise_stunned_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -42,7 +42,7 @@
             app:cardBackgroundColor="#0099FF">
 
             <Button
-                android:id="@+id/joy_elation_textView_menu2"
+                android:id="@+id/surprise_confused_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -59,7 +59,7 @@
             app:cardBackgroundColor="#00E1FF">
 
             <Button
-                android:id="@+id/joy_enthusiastic_textView_menu2"
+                android:id="@+id/surprise_amazed_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -78,12 +78,12 @@
             app:cardBackgroundColor="#00FFF7">
 
             <Button
-                android:id="@+id/love_longing_textView_menu2"
+                android:id="@+id/surprise_overcome_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:background="#00FFFFFF"
-                android:text="@string/confused"
+                android:text="@string/overcome"
                 android:textSize="42sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -95,12 +95,12 @@
             app:cardBackgroundColor="#00FFB2">
 
             <Button
-                android:id="@+id/joy_proud_textView_menu2"
+                android:id="@+id/surprise_moved_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:background="#00FFFFFF"
-                android:text="@string/stuned"
+                android:text="@string/moved"
                 android:textSize="42sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>

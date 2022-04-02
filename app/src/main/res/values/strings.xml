@@ -44,6 +44,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
     <string name="love">Love</string>
     <string name="joy">Joy</string>
     <string name="surprise">Surprise</string>
@@ -58,13 +59,14 @@
     <string name="cheerful">Cheerful</string>
     <string name="happy">Happy</string>
     <string name="content">Content</string>
-    <string name="stuuned">Stunned</string>
+
+    <string name="stunned">Stunned</string>
     <string name="confused">Confused</string>
     <string name="amazed">Amazed</string>
-    <string name="stunned">Stunned</string>
-    <string name="stuned">stuned</string>
 
-<!--    Strings for the 2nd submenu of LOVE
+
+
+    <!--    Strings for the 2nd submenu of LOVE
         The outer ring on the mood circle
 
         -->
@@ -112,6 +114,62 @@
 
 
     <string name="pleased">Pleased</string>
+    <string name="overcome">overcome</string>
+    <string name="moved">moved</string>
+
+
+<!--    Strings for Surprised/-->
+    <string name="touched">Touched</string>
+    <string name="stimulated">Stimulated</string>
+    <string name="astounded">Astounded</string>
+    <string name="speechless">Speechless</string>
+    <string name="awe_struck">Awe-struck</string>
+    <string name="astonished">Astonished</string>
+    <string name="perplexed">Perplexed</string>
+    <string name="disillusioned">Disillusioned</string>
+    <string name="dismayed">Dismayed</string>
+    <string name="shocked">Shocked</string>
+
+
+
+
+<!-- Sadness  -->
+    <string name="powerless">Powerless</string>
+    <string name="grief">Grief</string>
+
+    <string name="lonely">Lonely</string>
+    <string name="isolated">Isolated</string>
+
+    <string name="guilty">Guilty</string>
+    <string name="regretful">Regretful</string>
+
+    <string name="displeased">Displeased</string>
+    // Dismayed
+
+    <string name="sorrow">Sorrow</string>
+    <string name="depressed">Depressed</string>
+
+    <string name="hurt">Hurt</string>
+    <string name="Agony">Agony</string>
+
+<!-- Anger-->
+    <string name="revolt">Revolt</string>
+    <string name="contempt">Contempt</string>
+
+    <string name="jealous">Jealous</string>
+    <string name="resentful">Resentful</string>
+
+    <string name="Aggravated">Aggravated</string>
+    <string name="annoyed">Annoyed</string>
+
+    <string name="frustrated">Frustrated</string>
+    <string name="agitated">Agitated</string>
+
+    <string name="hostile">Hostile</string>
+    <string name="hate">Hate</string>
+
+
+
 
 
 

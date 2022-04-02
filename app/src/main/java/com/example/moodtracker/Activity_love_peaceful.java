@@ -1,11 +1,16 @@
 package com.example.moodtracker;
 
 import static com.example.moodtracker.R.color.amused;
+import static com.example.moodtracker.R.color.astonished;
+import static com.example.moodtracker.R.color.astounded;
 import static com.example.moodtracker.R.color.attracted;
+import static com.example.moodtracker.R.color.awe_struck;
 import static com.example.moodtracker.R.color.blissful;
 import static com.example.moodtracker.R.color.caring;
 import static com.example.moodtracker.R.color.compassionate;
 import static com.example.moodtracker.R.color.delighted;
+import static com.example.moodtracker.R.color.disillusioned;
+import static com.example.moodtracker.R.color.dismayed;
 import static com.example.moodtracker.R.color.eager;
 import static com.example.moodtracker.R.color.enchanted;
 import static com.example.moodtracker.R.color.euphoric;
@@ -17,6 +22,7 @@ import static com.example.moodtracker.R.color.infatuation;
 import static com.example.moodtracker.R.color.jovial;
 import static com.example.moodtracker.R.color.jubilation;
 import static com.example.moodtracker.R.color.passion;
+import static com.example.moodtracker.R.color.perplexed;
 import static com.example.moodtracker.R.color.pleased;
 import static com.example.moodtracker.R.color.rapture;
 import static com.example.moodtracker.R.color.relived;
@@ -24,8 +30,12 @@ import static com.example.moodtracker.R.color.romantic;
 import static com.example.moodtracker.R.color.satisfied;
 import static com.example.moodtracker.R.color.satisfied2;
 import static com.example.moodtracker.R.color.sentimental;
+import static com.example.moodtracker.R.color.shocked;
+import static com.example.moodtracker.R.color.speechless;
+import static com.example.moodtracker.R.color.stimulated;
 import static com.example.moodtracker.R.color.teal_200;
 import static com.example.moodtracker.R.color.purple_700;
+import static com.example.moodtracker.R.color.touched;
 import static com.example.moodtracker.R.color.triumphant;
 import static com.example.moodtracker.R.color.zeal;
 
@@ -188,6 +198,42 @@ public class Activity_love_peaceful extends AppCompatActivity {
 
                     bottomCard.setBackgroundColor(getResources().getColor(pleased));
                     bottomCardText.setText(R.string.pleased);
+                    break;
+//...................................................
+                case "stunned":
+                    topCard.setBackgroundColor(getResources().getColor(shocked));
+                    topCardText.setText(R.string.shocked);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(dismayed));
+                    bottomCardText.setText(R.string.dismayed);
+                    break;
+                case "confused":
+                    topCard.setBackgroundColor(getResources().getColor(disillusioned));
+                    topCardText.setText(R.string.disillusioned);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(perplexed));
+                    bottomCardText.setText(R.string.perplexed);
+                    break;
+                case "amazed":
+                    topCard.setBackgroundColor(getResources().getColor(astonished));
+                    topCardText.setText(R.string.astonished);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(awe_struck));
+                    bottomCardText.setText(R.string.awe_struck);
+                    break;
+                case "overcome":
+                    topCard.setBackgroundColor(getResources().getColor(speechless));
+                    topCardText.setText(R.string.speechless);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(astounded));
+                    bottomCardText.setText(R.string.astounded);
+                    break;
+                case "moved":
+                    topCard.setBackgroundColor(getResources().getColor(stimulated));
+                    topCardText.setText(R.string.stimulated);
+
+                    bottomCard.setBackgroundColor(getResources().getColor(touched));
+                    bottomCardText.setText(R.string.touched);
                     break;
 
 
