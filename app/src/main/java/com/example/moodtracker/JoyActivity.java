@@ -1,3 +1,8 @@
+/** ************************************************************************
+ * For questions about code and other stuff regarding this file ask Jhonatan
+ * *************************************************************************
+ *  */
+
 package com.example.moodtracker;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,12 +48,13 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
         content_section.setOnClickListener(this);
     }
 
-
+    // Switch is used to redirect to and attach the needed parameters to for the new activity
+    // which will display the appropriate mood in the outer ring of the mood circle.
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.joy_enthralled_textView_menu2:
-                Intent enthralled = new Intent(this, Activity_love_peaceful.class);
+                Intent enthralled = new Intent(this, OuterRingMoods.class);
                 Bundle enthralledMood = new Bundle();
                 enthralledMood.putString("key", "enthralled");
                 enthralled.putExtras(enthralledMood);
@@ -56,7 +62,7 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.joy_elation_textView_menu2:
-                Intent elation = new Intent(this, Activity_love_peaceful.class);
+                Intent elation = new Intent(this, OuterRingMoods.class);
                 Bundle elationMood = new Bundle();
                 elationMood.putString("key", "elation");
                 elation.putExtras(elationMood);
@@ -64,7 +70,7 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.joy_enthusiastic_textView_menu2:
-                Intent enthusiastic = new Intent(this, Activity_love_peaceful.class);
+                Intent enthusiastic = new Intent(this, OuterRingMoods.class);
                 Bundle enthusiasticMood = new Bundle();
                 enthusiasticMood.putString("key", "enthusiastic");
                 enthusiastic.putExtras(enthusiasticMood);
@@ -72,14 +78,14 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.joy_optimistic_textView_menu2:
-                Intent optimistic = new Intent(this, Activity_love_peaceful.class);
+                Intent optimistic = new Intent(this, OuterRingMoods.class);
                 Bundle optimisticMood = new Bundle();
                 optimisticMood.putString("key", "optimistic");
                 optimistic.putExtras(optimisticMood);
                 startActivity(optimistic);
                 break;
             case R.id.joy_proud_textView_menu2:
-                Intent proud = new Intent(this, Activity_love_peaceful.class);
+                Intent proud = new Intent(this, OuterRingMoods.class);
                 Bundle proudMood = new Bundle();
                 proudMood.putString("key", "proud");
                 proud.putExtras(proudMood);
@@ -87,7 +93,7 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.joy_cheerful_textView_menu2:
-                Intent cheerful = new Intent(this, Activity_love_peaceful.class);
+                Intent cheerful = new Intent(this, OuterRingMoods.class);
                 Bundle cheerfulMood = new Bundle();
                 cheerfulMood.putString("key", "cheerful");
                 cheerful.putExtras(cheerfulMood);
@@ -95,7 +101,7 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.joy_happy_textView_menu2:
-                Intent happy = new Intent(this, Activity_love_peaceful.class);
+                Intent happy = new Intent(this, OuterRingMoods.class);
                 Bundle happyMood = new Bundle();
                 happyMood.putString("key", "happy");
                 happy.putExtras(happyMood);
@@ -103,7 +109,7 @@ public class JoyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.joy_content_textView_menu2:
-                Intent content = new Intent(this, Activity_love_peaceful.class);
+                Intent content = new Intent(this, OuterRingMoods.class);
                 Bundle contentMood = new Bundle();
                 contentMood.putString("key", "content");
                 content.putExtras(contentMood);

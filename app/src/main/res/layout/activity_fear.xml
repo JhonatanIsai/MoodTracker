@@ -12,115 +12,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SurpriseActivity">
+    tools:context=".fear">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_enthralled_menu2"
-
+            android:id="@+id/fear_horror_menu2"
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
+            android:layout_weight=".2"
             android:layout_height="wrap_content"
 
-            app:cardBackgroundColor="#0073FF">
-
+            app:cardBackgroundColor="#fa83dd">
 
             <Button
-                android:id="@+id/surprise_stunned_textView_menu2"
+                android:id="@+id/fear_horror_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="#00FFFFFF"
-                android:text="@string/stunned"
+                android:text="@string/horror"
                 android:textSize="42sp"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"
+                android:background="#00FFFFFF"
+                />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_elation_menu2"
+            android:id="@+id/fear_nervous_menu2"
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
+            android:layout_weight=".2"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="#0099FF">
+            app:cardBackgroundColor="#f985c6">
 
             <Button
-                android:id="@+id/surprise_confused_textView_menu2"
+                android:id="@+id/fear_nervous_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="#00FFFFFF"
-                android:text="@string/confused"
+                android:text="@string/nervous"
                 android:textSize="42sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="#00FFFFFF"
+                />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_enthusiastic_menu2"
+            android:id="@+id/fear_insecure_menu2"
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
-             android:layout_height="wrap_content"
-            app:cardBackgroundColor="#00E1FF">
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#f985c6">
 
             <Button
-                android:id="@+id/surprise_amazed_textView_menu2"
+                android:id="@+id/fear_insecure_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="#00FFFFFF"
-                android:text="@string/amazed"
+                android:text="@string/insecure"
                 android:textSize="36sp"
                 android:textStyle="bold"
+                android:background="#00FFFFFF"
 
                 />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_optimistic_menu2"
+            android:id="@+id/fear_terror_menu2"
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
+            android:layout_weight=".2"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="#00FFF7">
+            app:cardBackgroundColor="#ff94ba">
 
             <Button
-                android:id="@+id/surprise_overcome_textView_menu2"
+                android:id="@+id/fear_terror_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:text="@string/terror"
+                android:textSize="38sp"
+                android:textStyle="bold"
                 android:background="#00FFFFFF"
-                android:text="@string/overcome"
-                android:textSize="42sp"
-                android:textStyle="bold" />
+                />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_proud_menu2"
+            android:id="@+id/fear_scared_menu2"
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
+            android:layout_weight=".2"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="#00FFB2">
+            app:cardBackgroundColor="#fda8ae">
 
             <Button
-                android:id="@+id/surprise_moved_textView_menu2"
+                android:id="@+id/sadness_scared_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="#00FFFFFF"
-                android:text="@string/moved"
+                android:text="@string/scared"
                 android:textSize="42sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="#00FFFFFF"
+                />
         </androidx.cardview.widget.CardView>
 
 
-
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -60,8 +60,20 @@ public class MoodSquaresActivity extends AppCompatActivity implements View.OnCli
                 startActivity(new Intent(MoodSquaresActivity.this, JoyActivity.class));
                 break;
 
-            case R.id.mood_square_surprise_button:
+            case R.id.mood_square_surprise_button:_button:
                 startActivity(new Intent(MoodSquaresActivity.this, SurpriseActivity.class));
+                break;
+
+            case R.id.mood_square_anger_button:_button:
+                startActivity(new Intent(MoodSquaresActivity.this, Anger.class));
+                break;
+
+            case R.id.mood_square_sadness_button:_button:
+                startActivity(new Intent(MoodSquaresActivity.this, sadness.class));
+                break;
+
+            case R.id.mood_square_fear_button:_button:
+                startActivity(new Intent(MoodSquaresActivity.this, fear.class));
                 break;
         }
 

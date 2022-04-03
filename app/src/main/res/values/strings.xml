@@ -64,6 +64,18 @@
     <string name="confused">Confused</string>
     <string name="amazed">Amazed</string>
 
+    <string name="hostile">Hostile</string>
+    <string name="hate">Hate</string>
+    <string name="rage">Rage</string>
+    <string name="exasperated">Exasperated</string>
+    <string name="irritable">Irritable</string>
+    <string name="envy">Envy</string>
+    <string name="disgust">Disgust</string>
+    <string name="scared">scared</string>
+    <string name="terror">terror</string>
+    <string name="insecure">insecure</string>
+    <string name="nervous">nervous</string>
+    <string name="horror">horror</string>
 
 
     <!--    Strings for the 2nd submenu of LOVE
@@ -118,7 +130,7 @@
     <string name="moved">moved</string>
 
 
-<!--    Strings for Surprised/-->
+    <!--    Strings for Surprised/-->
     <string name="touched">Touched</string>
     <string name="stimulated">Stimulated</string>
     <string name="astounded">Astounded</string>
@@ -131,9 +143,7 @@
     <string name="shocked">Shocked</string>
 
 
-
-
-<!-- Sadness  -->
+    <!-- Sadness  -->
     <string name="powerless">Powerless</string>
     <string name="grief">Grief</string>
 
@@ -152,7 +162,7 @@
     <string name="hurt">Hurt</string>
     <string name="Agony">Agony</string>
 
-<!-- Anger-->
+    <!-- Anger-->
     <string name="revolt">Revolt</string>
     <string name="contempt">Contempt</string>
 
@@ -165,9 +175,21 @@
     <string name="frustrated">Frustrated</string>
     <string name="agitated">Agitated</string>
 
-    <string name="hostile">Hostile</string>
-    <string name="hate">Hate</string>
+<!--Fear-->
+    <string name="dread">Dread</string>
+    <string name="mortified">Mortified</string>
 
+    <string name="anxious">Anxious</string>
+    <string name="worried">Worried</string>
+
+    <string name="inadequate">Inadequate</string>
+    <string name="inferior">Inferior</string>
+
+    <string name="hysterical">Hysterical</string>
+    <string name="panic">Panic</string>
+
+    <string name="helpless">Helpless</string>
+    <string name="frightened">Frightened</string>
 
 
 

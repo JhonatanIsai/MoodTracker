@@ -1,3 +1,8 @@
+/** ************************************************************************
+ * For questions about code and other stuff regarding this file ask Jhonatan
+ * *************************************************************************
+ *  */
+
 package com.example.moodtracker;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,12 +41,13 @@ public class LoveActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
+    // Switch is used to redirect to and attach the needed parameters to for the new activity
+    // which will display the appropriate mood in the outer ring of the mood circle.
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.love_peaceful_menu2:
-                Intent peaceful = new Intent(this, Activity_love_peaceful.class);
+                Intent peaceful = new Intent(this, OuterRingMoods.class);
                 Bundle mood = new Bundle();
                 mood.putString("key","peaceful");
                 peaceful.putExtras(mood);
@@ -49,7 +55,7 @@ public class LoveActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.love_tender_menu2:
-                Intent tender = new Intent(this, Activity_love_peaceful.class);
+                Intent tender = new Intent(this, OuterRingMoods.class);
                 Bundle tenderMood = new Bundle();
                 tenderMood.putString("key","tenderness");
                 tender.putExtras(tenderMood);
@@ -57,7 +63,7 @@ public class LoveActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.love_desire_menu2:
-                Intent desire = new Intent(this, Activity_love_peaceful.class);
+                Intent desire = new Intent(this, OuterRingMoods.class);
                 Bundle desireMood = new Bundle();
                 desireMood.putString("key","desire");
                 desire.putExtras(desireMood);
@@ -65,14 +71,14 @@ public class LoveActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.love_longing_menu2:
-                Intent longing = new Intent(this, Activity_love_peaceful.class);
+                Intent longing = new Intent(this, OuterRingMoods.class);
                 Bundle longingMood = new Bundle();
                 longingMood.putString("key","longing");
                 longing.putExtras(longingMood);
                 startActivity(longing);
                 break;
             case R.id.love_affectionate_menu2:
-                Intent affectionate = new Intent(this, Activity_love_peaceful.class);
+                Intent affectionate = new Intent(this, OuterRingMoods.class);
                 Bundle affectionateMood = new Bundle();
                 affectionateMood.putString("key","affectionate");
                 affectionate.putExtras(affectionateMood);

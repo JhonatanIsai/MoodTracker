@@ -111,4 +111,23 @@
     <color name="hostile">#F69BC4</color>
     <color name="hate">#F48FB7</color>
 
+
+    <!--Fear-->
+    <color name="dread">#fa83dd</color>
+    <color name="mortified">#f370ca</color>
+
+    <color name="anxious">#f985c6</color>
+    <color name="worried">#f572b2</color>
+
+    <color name="inadequate">#fd84b9</color>
+    <color name="inferior">#f875ab</color>
+
+    <color name="hysterical">#ff94ba</color>
+    <color name="panic">#f884a4</color>
+
+    <color name="helpless">#fda8ae</color>
+    <color name="frightened">#f99c9b</color>
+
+
+
 </resources>

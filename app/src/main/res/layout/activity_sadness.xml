@@ -12,31 +12,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JoyActivity">
+    tools:context=".sadness">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_enthralled_menu2"
+            android:id="@+id/sadness_despair_menu2"
             android:layout_width="match_parent"
-            android:layout_height="91dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
 
-            app:cardBackgroundColor="#00FFB2">
-
+            app:cardBackgroundColor="#bdf6e8">
 
             <Button
-                android:id="@+id/joy_enthralled_textView_menu2"
+                android:id="@+id/sadness_despair_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="@string/enthralled"
+                android:text="despair"
                 android:textSize="42sp"
                 android:textStyle="bold"
                 android:background="#00FFFFFF"
@@ -44,17 +45,18 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_elation_menu2"
+            android:id="@+id/sadness_neglected_menu2"
             android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#00FF94">
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#c1eff1">
 
             <Button
-                android:id="@+id/joy_elation_textView_menu2"
+                android:id="@+id/sadness_neglectedtextView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="@string/elation"
+                android:text="neglected"
                 android:textSize="42sp"
                 android:textStyle="bold"
                 android:background="#00FFFFFF"
@@ -62,17 +64,18 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_enthusiastic_menu2"
+            android:id="@+id/sadness_irritable_menu2"
             android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#00FF66">
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#beddfa">
 
             <Button
-                android:id="@+id/joy_enthusiastic_textView_menu2"
+                android:id="@+id/sadness_shameful_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="@string/enthusiastic"
+                android:text="shameful"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 android:background="#00FFFFFF"
@@ -81,17 +84,37 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_optimistic_menu2"
+            android:id="@+id/sadness_disappointment_menu2"
             android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#00FF38">
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#b2c7fb">
 
             <Button
-                android:id="@+id/joy_optimistic_textView_menu2"
+                android:id="@+id/sadness_disappointment_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="@string/optimistic"
+                android:text="disappointment"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:background="#00FFFFFF"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sadness_sadness_menu2"
+            android:layout_width="match_parent"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#b9c0fb">
+
+            <Button
+                android:id="@+id/sadness_sadness_textView_menu2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/sadness"
                 android:textSize="42sp"
                 android:textStyle="bold"
                 android:background="#00FFFFFF"
@@ -99,76 +122,28 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/joy_proud_menu2"
+            android:id="@+id/sadness_suffering_menu2"
             android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#70FF00">
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#b0b8f3">
 
             <Button
-                android:id="@+id/joy_proud_textView_menu2"
+                android:id="@+id/sadness_suffering_textView_menu2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="@string/proud"
+                android:text="suffering"
                 android:textSize="42sp"
-                android:textStyle="bold"
-                android:background="#00FFFFFF"
-                />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/joy_cheerful_menu2"
-            android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#9EFF00">
-
-            <Button
-                android:id="@+id/joy_cheerful_textView_menu2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:text="@string/cheerful"
-                android:textSize="42sp"
-                android:textStyle="bold"
-                android:background="#00FFFFFF"
-                />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/joy_happy_menu2"
-            android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#BDFF00">
-
-            <Button
-                android:id="@+id/joy_happy_textView_menu2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:text="@string/happy"
-                android:textSize="42sp"
-                android:textStyle="bold"
-                android:background="#00FFFFFF"
-                />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/joy_content_menu2"
-            android:layout_width="match_parent"
-            android:layout_height="91dp"
-            app:cardBackgroundColor="#DBFF00">
-
-            <Button
-                android:id="@+id/joy_content_textView_menu2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:text="@string/content"
-                android:textSize="36sp"
                 android:textStyle="bold"
                 android:background="#00FFFFFF"
                 />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
