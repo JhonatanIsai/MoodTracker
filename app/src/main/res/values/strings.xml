@@ -175,7 +175,7 @@
     <string name="frustrated">Frustrated</string>
     <string name="agitated">Agitated</string>
 
-<!--Fear-->
+    <!--Fear-->
     <string name="dread">Dread</string>
     <string name="mortified">Mortified</string>
 
@@ -191,8 +191,7 @@
     <string name="helpless">Helpless</string>
     <string name="frightened">Frightened</string>
 
-
-
+    <string name="chair">chair</string>
 
 
 </resources>

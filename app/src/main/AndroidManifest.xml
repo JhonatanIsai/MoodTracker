@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodTracker">
         <activity
+            android:name=".wellness_toolbox"
+            android:exported="false" />
+        <activity
             android:name=".fear"
             android:exported="false" />
         <activity
