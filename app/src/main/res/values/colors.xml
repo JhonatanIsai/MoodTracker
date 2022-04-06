@@ -72,7 +72,7 @@
     <color name="perplexed">#cee8e5</color>
     <color name="disillusioned">#bee3dc</color>
 
-    <color name="dismayed">#c4eaed</color>
+    <color name="dismayed">#93DBE0</color>
     <color name="shocked">#b6e3e9</color>
 
 
@@ -128,6 +128,9 @@
     <color name="helpless">#fda8ae</color>
     <color name="frightened">#f99c9b</color>
 
+
+    <color name="transparent">#0000ffff </color>
+    <color name="shadow">#7e7f7f</color>
 
 
 </resources>
