@@ -82,7 +82,7 @@
                     >
 
                     <ImageView
-                        android:id="@+id/imageButton2"
+                        android:id="@+id/imageButton_breathe"
                         android:layout_width="196dp"
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
@@ -122,7 +122,7 @@
                 >
 
                 <ImageButton
-                    android:id="@+id/wellness_TB_top_right"
+                    android:id="@+id/imageButton_gratitude_journal"
 
                     android:layout_width="196dp"
                     android:layout_height="match_parent"
@@ -170,7 +170,7 @@
                 >
 
                 <ImageView
-                    android:id="@+id/wellness_TB_middle_left"
+                    android:id="@+id/imageButton_tapping"
                     android:layout_width="196dp"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
@@ -204,7 +204,7 @@
                 >
 
                 <ImageView
-                    android:id="@+id/wellness_TB_middle_right"
+                    android:id="@+id/imageButton_breathe_mood_log"
                     android:layout_width="196dp"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
@@ -245,7 +245,7 @@
                 >
 
                 <ImageButton
-                    android:id="@+id/wellness_TB_bottom_left"
+                    android:id="@+id/imageButton_breathe_stretching"
                     android:layout_width="196dp"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
@@ -276,7 +276,7 @@
                 >
 
                 <ImageButton
-                    android:id="@+id/wellness_TB_bottom_right"
+                    android:id="@+id/imageButton_breathe_tea"
 
                     android:layout_width="196dp"
                     android:layout_height="match_parent"
@@ -294,7 +294,7 @@
                     android:background="@color/white"
                     android:gravity="center"
 
-                    android:text="Stretching" />
+                    android:text="Relaxing" />
 
             </androidx.cardview.widget.CardView>
 
