@@ -33,6 +33,10 @@ public class VideoView extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                // The ID is the vide ID from youtube
+                // its the very last part after the equals sign "="
+                // watch out for the ampersand, it may give issues
+
                 super.onReady(youTubePlayer);
                 String videoId = "VSMAjMfJ6KQ";
                 youTubePlayer.loadVideo(videoId,0);

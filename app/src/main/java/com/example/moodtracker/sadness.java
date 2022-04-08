@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+// Make sure that we have the "implements View.OnClickListener"
 public class sadness extends AppCompatActivity implements View.OnClickListener {
 
     private View despair_section, neglected_section, amazed_section, overcome_section, moved_section
@@ -17,6 +18,7 @@ public class sadness extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_sadness);
 
 
+        // each one of this are a diffrent mood in the
         despair_section = findViewById(R.id.sadness_despair_textView_menu2);
         despair_section.setOnClickListener(this);;
 
