@@ -52,7 +52,7 @@
     <string name="sadness">Sadness</string>
     <string name="fear">Fear</string>
     <string name="enthralled">Enthralled</string>
-    <string name="elation">Elation</string>
+    <string name="elated">Elated</string>
     <string name="enthusiastic">Enthusiastic</string>
     <string name="optimistic">Optimistic</string>
     <string name="proud">Proud</string>
@@ -65,17 +65,17 @@
     <string name="amazed">Amazed</string>
 
     <string name="hostile">Hostile</string>
-    <string name="hate">Hate</string>
-    <string name="rage">Rage</string>
+    <string name="hateful">Hateful</string>
+    <string name="rageful">Rageful</string>
     <string name="exasperated">Exasperated</string>
     <string name="irritable">Irritable</string>
-    <string name="envy">Envy</string>
-    <string name="disgust">Disgust</string>
+    <string name="envious">Envious</string>
+    <string name="disgusted">Disgusted</string>
     <string name="scared">scared</string>
-    <string name="terror">terror</string>
+    <string name="terrorized">terrorized</string>
     <string name="insecure">insecure</string>
     <string name="nervous">nervous</string>
-    <string name="horror">horror</string>
+    <string name="horrified">horrified</string>
 
 
     <!--    Strings for the 2nd submenu of LOVE
@@ -88,7 +88,7 @@
     <string name="compassionate">Compassionate</string>
     <string name="caring">Caring</string>
 
-    <string name="infatuation">Infatuation</string>
+    <string name="infatuated">Infatuated</string>
     <string name="passion">Passion</string>
 
     <string name="attracted">Attracted</string>
@@ -102,14 +102,14 @@
             The outer ring on the mood circle
 
             -->
-    <string name="rapture">Rapture</string>
+    <string name="raptured">Raptured</string>
     <string name="enchanted">Enchanted</string>
 
     <string name="jubilation">Jubilation</string>
     <string name="euphoric">Caring</string>
 
-    <string name="zeal">Zeal</string>
-    <string name="exited">Exited</string>
+    <string name="zealous">Zealous</string>
+    <string name="excited">Excited</string>
 
     <string name="hopeful">Hopeful</string>
     <string name="eager">Eager</string>
@@ -160,7 +160,7 @@
     <string name="depressed">Depressed</string>
 
     <string name="hurt">Hurt</string>
-    <string name="Agony">Agony</string>
+    <string name="agony">Agony</string>
 
     <!-- Anger-->
     <string name="revolt">Revolt</string>
@@ -169,7 +169,7 @@
     <string name="jealous">Jealous</string>
     <string name="resentful">Resentful</string>
 
-    <string name="Aggravated">Aggravated</string>
+    <string name="aggravated">Aggravated</string>
     <string name="annoyed">Annoyed</string>
 
     <string name="frustrated">Frustrated</string>
