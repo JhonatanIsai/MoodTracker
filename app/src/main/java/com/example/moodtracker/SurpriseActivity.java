@@ -22,6 +22,7 @@ public class SurpriseActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_surprise);
 
+        // each one of this are a different mood in the
 
         overcome_section = findViewById(R.id.surprise_overcome_textView_menu2);
         overcome_section.setOnClickListener(this);;

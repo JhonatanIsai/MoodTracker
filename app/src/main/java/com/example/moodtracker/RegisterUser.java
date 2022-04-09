@@ -190,6 +190,8 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                     return;
                                     // Get rig od the progress bar
                                 }
+                                // I tried to add a progress bar but i had trouble so i just gave up
+
 //                                progressBar.setVisibility(View.GONE);
 
                             }

@@ -3,6 +3,9 @@
  * *************************************************************************
  *  */
 
+/** This is ued fo the register activity
+ * just contains parameters that take and pass to firebase
+ * */
 
 package com.example.moodtracker;
 
