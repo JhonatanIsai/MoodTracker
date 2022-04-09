@@ -144,7 +144,7 @@ public class OuterRingMoods extends AppCompatActivity {
 
                 case "desire":
                     topCard.setBackgroundColor(getResources().getColor(infatuation));
-                    topCardText.setText(R.string.infatuation);
+                    topCardText.setText(R.string.infatuated);
 
                     bottomCard.setBackgroundColor(getResources().getColor(passion));
                     bottomCardText.setText(R.string.passion);
@@ -170,7 +170,7 @@ public class OuterRingMoods extends AppCompatActivity {
  * */
                 case "enthralled":
                     topCard.setBackgroundColor(getResources().getColor(rapture));
-                    topCardText.setText(R.string.rapture);
+                    topCardText.setText(R.string.raptured);
 
                     bottomCard.setBackgroundColor(getResources().getColor(enchanted));
                     bottomCardText.setText(R.string.enchanted);
@@ -186,10 +186,10 @@ public class OuterRingMoods extends AppCompatActivity {
 
                 case "enthusiastic":
                     topCard.setBackgroundColor(getResources().getColor(zeal));
-                    topCardText.setText(R.string.zeal);
+                    topCardText.setText(R.string.zealous);
 
                     bottomCard.setBackgroundColor(getResources().getColor(exited));
-                    bottomCardText.setText(R.string.exited);
+                    bottomCardText.setText(R.string.excited);
                     break;
 
                 case "optimistic":
@@ -291,7 +291,7 @@ public class OuterRingMoods extends AppCompatActivity {
                     break;
                 case "irritable":
                     topCard.setBackgroundColor(getResources().getColor(Aggravated));
-                    topCardText.setText(R.string.Aggravated);
+                    topCardText.setText(R.string.aggravated);
 
                     bottomCard.setBackgroundColor(getResources().getColor(annoyed));
                     bottomCardText.setText(R.string.annoyed);
@@ -348,7 +348,7 @@ public class OuterRingMoods extends AppCompatActivity {
 
                 case "suffering":
                     topCard.setBackgroundColor(getResources().getColor(Agony));
-                    topCardText.setText(R.string.Agony);
+                    topCardText.setText(R.string.agony);
 
                     bottomCard.setBackgroundColor(getResources().getColor(sorrow));
                     bottomCardText.setText(R.string.sorrow);
