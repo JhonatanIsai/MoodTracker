@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/purple_200"
     >//how to change bg color to match mood?
-    //
+    // From jhonatan: ^^^ i will pass an argument from the mood square with the
+    // color value
 
 
     <EditText
@@ -18,44 +19,58 @@
         android:inputType="textPersonName"
         android:text="Why do you feel "
         android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     //submit button, color?
+
+    //cancel button, color?
+
+    //text field, change dimensions?
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
         android:text="SUBMIT"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="623dp"
-        />
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
-    //cancel button, color?
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
         android:text="CANCEL"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="1.0" />
 
-    //text field, change dimensions?
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="273dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:height="200"
+            android:height="200dp"
             android:hint="When ____ happened, I felt ____." />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     //how to insert selected mood from previous page?
+
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
@@ -63,7 +78,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="mood goes here"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

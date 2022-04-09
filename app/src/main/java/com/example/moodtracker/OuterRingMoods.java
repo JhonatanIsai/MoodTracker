@@ -73,17 +73,20 @@ import static com.example.moodtracker.R.color.triumphant;
 import static com.example.moodtracker.R.color.worried;
 import static com.example.moodtracker.R.color.zeal;
 
+import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class OuterRingMoods extends AppCompatActivity {
+public class OuterRingMoods extends AppCompatActivity implements View.OnClickListener {
 
     private View topCard, bottomCard;
     private TextView topCardText, bottomCardText;
     private String submenuMood;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +114,27 @@ public class OuterRingMoods extends AppCompatActivity {
 
     }
 
+    void passMoodToOuterRingTop(int mood,  int color ){
+        View card = findViewById(R.id.love_submenu_submenu_top_card);;
+        card.setBackgroundColor(getResources().getColor(color));
+        // Setting clickable
+        card.setOnClickListener(this);
+
+        TextView cardText = findViewById(R.id.love_submenu_submenu_top_text);
+        cardText.setText(mood);
+
+    }
+
+    void passMoodToOuterRingBottom(int mood,  int color ){
+        View card = findViewById(R.id.love_submenu_submenu_bottom_card);;
+        card.setBackgroundColor(getResources().getColor(color));
+        card.setOnClickListener(this);
+
+        TextView cardText = findViewById(R.id.love_submenu_submenu_bottom_text);
+        cardText.setText(mood);
+    }
+
+
 
     /** This functions will change the text and colors of the file.
      * it will take string from the files of the second sub menu in the mood circle,
@@ -127,148 +151,145 @@ public class OuterRingMoods extends AppCompatActivity {
  * This first section will make the changes pertaining to the moods in the LOVE submenu.
  * */
                 case "peaceful":
-                    topCard.setBackgroundColor(getResources().getColor(relived));
-                    topCardText.setText(R.string.relieved);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(satisfied));
-                    bottomCardText.setText(R.string.satisfied);
+
+                    passMoodToOuterRingTop(R.string.relieved, relived);
+//
+                    passMoodToOuterRingBottom(R.string.satisfied, satisfied);
+
                     break;
 
                 case "tenderness":
-                    topCard.setBackgroundColor(getResources().getColor(compassionate));
-                    topCardText.setText(R.string.compassionate);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(caring));
-                    bottomCardText.setText(R.string.caring);
+                    passMoodToOuterRingTop(R.string.compassionate, compassionate);
+//
+                    passMoodToOuterRingBottom(R.string.caring, caring);
+
                     break;
 
                 case "desire":
-                    topCard.setBackgroundColor(getResources().getColor(infatuation));
-                    topCardText.setText(R.string.infatuated);
+                    passMoodToOuterRingTop(R.string.infatuated, infatuation);
+//
+                    passMoodToOuterRingBottom(R.string.passion, passion);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(passion));
-                    bottomCardText.setText(R.string.passion);
                     break;
 
                 case "longing":
-                    topCard.setBackgroundColor(getResources().getColor(attracted));
-                    topCardText.setText(R.string.attracted);
+                    passMoodToOuterRingTop(R.string.attracted, attracted);
+//
+                    passMoodToOuterRingBottom(R.string.sentimental, sentimental);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(sentimental));
-                    bottomCardText.setText(R.string.sentimental);
                     break;
 
                 case "affectionate":
-                    topCard.setBackgroundColor(getResources().getColor(fondness));
-                    topCardText.setText(R.string.fondness);
+                    passMoodToOuterRingTop(R.string.fondness, fondness);
+//
+                    passMoodToOuterRingBottom(R.string.romantic, romantic);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(romantic));
-                    bottomCardText.setText(R.string.romantic);
+
                     break;
 /**
  * This first section will make the changes pertaining to the moods in the JOY submenu.
  * */
                 case "enthralled":
-                    topCard.setBackgroundColor(getResources().getColor(rapture));
-                    topCardText.setText(R.string.raptured);
+                    passMoodToOuterRingTop(R.string.raptured, rapture);
+//
+                    passMoodToOuterRingBottom(R.string.enchanted, enchanted);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(enchanted));
-                    bottomCardText.setText(R.string.enchanted);
+
                     break;
 
                 case "elation":
-                    topCard.setBackgroundColor(getResources().getColor(jubilation));
-                    topCardText.setText(R.string.jubilation);
+                    passMoodToOuterRingTop(R.string.jubilation, jubilation);
+//
+                    passMoodToOuterRingBottom(R.string.euphoric, euphoric);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(euphoric));
-                    bottomCardText.setText(R.string.euphoric);
+
                     break;
 
                 case "enthusiastic":
-                    topCard.setBackgroundColor(getResources().getColor(zeal));
-                    topCardText.setText(R.string.zealous);
+                    passMoodToOuterRingTop(R.string.zealous, zeal);
+//
+                    passMoodToOuterRingBottom(R.string.excited, exited);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(exited));
-                    bottomCardText.setText(R.string.excited);
+
                     break;
 
                 case "optimistic":
-                    topCard.setBackgroundColor(getResources().getColor(hopeful));
-                    topCardText.setText(R.string.hopeful);
+                    passMoodToOuterRingTop(R.string.hopeful, hopeful);
+//
+                    passMoodToOuterRingBottom(R.string.eager, eager);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(eager));
-                    bottomCardText.setText(R.string.eager);
+
                     break;
 
                 case "proud":
-                    topCard.setBackgroundColor(getResources().getColor(illustrious));
-                    topCardText.setText(R.string.illustrious);
+                    passMoodToOuterRingTop(R.string.illustrious, illustrious);
+//
+                    passMoodToOuterRingBottom(R.string.triumphant, triumphant);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(triumphant));
-                    bottomCardText.setText(R.string.triumphant);
                     break;
 
 
                 case "cheerful":
-                    topCard.setBackgroundColor(getResources().getColor(blissful));
-                    topCardText.setText(R.string.blissful);
+                    passMoodToOuterRingTop(R.string.blissful, blissful);
+//
+                    passMoodToOuterRingBottom(R.string.jovial, jovial);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(jovial));
-                    bottomCardText.setText(R.string.jovial);
+
                     break;
 
                 case "happy":
-                    topCard.setBackgroundColor(getResources().getColor(delighted));
-                    topCardText.setText(R.string.delighted);
+                    passMoodToOuterRingTop(R.string.delighted, delighted);
+//
+                    passMoodToOuterRingBottom(R.string.amused, amused);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(amused));
-                    bottomCardText.setText(R.string.amused);
+
                     break;
 
                 case "content":
-                    topCard.setBackgroundColor(getResources().getColor(satisfied2));
-                    topCardText.setText(R.string.satisfied);
+                    passMoodToOuterRingTop(R.string.satisfied, satisfied2);
+//
+                    passMoodToOuterRingBottom(R.string.pleased, pleased);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(pleased));
-                    bottomCardText.setText(R.string.pleased);
+
                     break;
 /**
  * This first section will make the changes pertaining to the moods in the Surprise submenu.
  * */
                 case "stunned":
-                    topCard.setBackgroundColor(getResources().getColor(shocked));
-                    topCardText.setText(R.string.shocked);
+                    passMoodToOuterRingTop(R.string.shocked, shocked);
+//
+                    passMoodToOuterRingBottom(R.string.dismayed, dismayed);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(dismayed));
-                    bottomCardText.setText(R.string.dismayed);
                     break;
                 case "confused":
-                    topCard.setBackgroundColor(getResources().getColor(disillusioned));
-                    topCardText.setText(R.string.disillusioned);
+                    passMoodToOuterRingTop(R.string.disillusioned, disillusioned);
+//
+                    passMoodToOuterRingBottom(R.string.perplexed, perplexed);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(perplexed));
-                    bottomCardText.setText(R.string.perplexed);
+
                     break;
                 case "amazed":
-                    topCard.setBackgroundColor(getResources().getColor(astonished));
-                    topCardText.setText(R.string.astonished);
+                    passMoodToOuterRingTop(R.string.astonished, astonished);
+//
+                    passMoodToOuterRingBottom(R.string.awe_struck, awe_struck);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(awe_struck));
-                    bottomCardText.setText(R.string.awe_struck);
+
                     break;
                 case "overcome":
-                    topCard.setBackgroundColor(getResources().getColor(speechless));
-                    topCardText.setText(R.string.speechless);
+                    passMoodToOuterRingTop(R.string.speechless, speechless);
+//
+                    passMoodToOuterRingBottom(R.string.astounded, astounded);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(astounded));
-                    bottomCardText.setText(R.string.astounded);
+
                     break;
                 case "moved":
-                    topCard.setBackgroundColor(getResources().getColor(stimulated));
-                    topCardText.setText(R.string.stimulated);
+                    passMoodToOuterRingTop(R.string.stimulated, stimulated);
+//
+                    passMoodToOuterRingBottom(R.string.touched, touched);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(touched));
-                    bottomCardText.setText(R.string.touched);
+
                     break;
 
 
@@ -276,32 +297,32 @@ public class OuterRingMoods extends AppCompatActivity {
                  * This first section will make the changes pertaining to the moods in the ANGER submenu.
                  * */
                 case "disgust":
-                    topCard.setBackgroundColor(getResources().getColor(revolt));
-                    topCardText.setText(R.string.revolt);
+                    passMoodToOuterRingTop(R.string.revolt, revolt);
+//
+                    passMoodToOuterRingBottom(R.string.contempt, contempt);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(contempt));
-                    bottomCardText.setText(R.string.contempt);
+
                     break;
                 case "envy":
-                    topCard.setBackgroundColor(getResources().getColor(jealous));
-                    topCardText.setText(R.string.jealous);
+                    passMoodToOuterRingTop(R.string.jealous, jealous);
+//
+                    passMoodToOuterRingBottom(R.string.resentful, resentful);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(resentful));
-                    bottomCardText.setText(R.string.resentful);
+
                     break;
                 case "irritable":
-                    topCard.setBackgroundColor(getResources().getColor(Aggravated));
-                    topCardText.setText(R.string.aggravated);
+                    passMoodToOuterRingTop(R.string.aggravated, Aggravated);
+//
+                    passMoodToOuterRingBottom(R.string.annoyed, annoyed);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(annoyed));
-                    bottomCardText.setText(R.string.annoyed);
+
                     break;
                 case "exasperated":
-                    topCard.setBackgroundColor(getResources().getColor(frustrated));
-                    topCardText.setText(R.string.frustrated);
+                    passMoodToOuterRingTop(R.string.frustrated, frustrated);
+//
+                    passMoodToOuterRingBottom(R.string.agitated, agitated);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(agitated));
-                    bottomCardText.setText(R.string.agitated);
+
                     break;
 
 
@@ -309,49 +330,48 @@ public class OuterRingMoods extends AppCompatActivity {
                  * This first section will make the changes pertaining to the moods in the Sadness submenu.
                  * */
                 case "despair":
-                    topCard.setBackgroundColor(getResources().getColor(powerless));
-                    topCardText.setText(R.string.powerless);
+                    passMoodToOuterRingTop(R.string.powerless, powerless);
+//
+                    passMoodToOuterRingBottom(R.string.grief, grief);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(grief));
-                    bottomCardText.setText(R.string.grief);
+
                     break;
                 case "neglected":
-                    topCard.setBackgroundColor(getResources().getColor(lonely));
-                    topCardText.setText(R.string.lonely);
+                    passMoodToOuterRingTop(R.string.lonely, lonely);
+//
+                    passMoodToOuterRingBottom(R.string.isolated, isolated);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(isolated));
-                    bottomCardText.setText(R.string.isolated);
+
                     break;
                 case "shameful":
-                    topCard.setBackgroundColor(getResources().getColor(guilty));
-                    topCardText.setText(R.string.guilty);
+                    passMoodToOuterRingTop(R.string.guilty, guilty);
+//
+                    passMoodToOuterRingBottom(R.string.regretful, regretful);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(regretful));
-                    bottomCardText.setText(R.string.regretful);
+
                     break;
                 case "disappointment":
-                    topCard.setBackgroundColor(getResources().getColor(displeased));
-                    topCardText.setText(R.string.displeased);
+                    passMoodToOuterRingTop(R.string.displeased, displeased);
+//
+                    passMoodToOuterRingBottom(R.string.dismayed, dismayed2);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(dismayed2));
-                    bottomCardText.setText(R.string.dismayed);
 
                     break;
 
                 case "sadness":
-                    topCard.setBackgroundColor(getResources().getColor(depressed));
-                    topCardText.setText(R.string.depressed);
+                    passMoodToOuterRingTop(R.string.depressed, depressed);
+//
+                    passMoodToOuterRingBottom(R.string.hurt, hurt);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(hurt));
-                    bottomCardText.setText(R.string.hurt);
+
                     break;
 
                 case "suffering":
-                    topCard.setBackgroundColor(getResources().getColor(Agony));
-                    topCardText.setText(R.string.agony);
+                    passMoodToOuterRingTop(R.string.agony, Agony);
+//
+                    passMoodToOuterRingBottom(R.string.sorrow, sorrow);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(sorrow));
-                    bottomCardText.setText(R.string.sorrow);
+
                     break;
 
 
@@ -360,41 +380,44 @@ public class OuterRingMoods extends AppCompatActivity {
                  * This first section will make the changes pertaining to the moods in the Sadness submenu.
                  * */
                 case "horror":
-                    topCard.setBackgroundColor(getResources().getColor(dread));
-                    topCardText.setText(R.string.dread);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(mortified));
-                    bottomCardText.setText(R.string.mortified);
+                    passMoodToOuterRingTop(R.string.dread, dread);
+//
+                    passMoodToOuterRingBottom(R.string.mortified, mortified);
+
+
                     break;
                 case "nervous":
-                    topCard.setBackgroundColor(getResources().getColor(anxious));
-                    topCardText.setText(R.string.anxious);
+                    passMoodToOuterRingTop(R.string.anxious, anxious);
+//
+                    passMoodToOuterRingBottom(R.string.worried, worried);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(worried));
-                    bottomCardText.setText(R.string.worried);
+
+
                     break;
                 case "insecure":
-                    topCard.setBackgroundColor(getResources().getColor(inadequate));
-                    topCardText.setText(R.string.inadequate);
+                    passMoodToOuterRingTop(R.string.inadequate, inadequate);
+//
+                    passMoodToOuterRingBottom(R.string.inferior, inferior);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(inferior));
-                    bottomCardText.setText(R.string.inferior);
+
+
                     break;
                 case "terror":
-                    topCard.setBackgroundColor(getResources().getColor(hysterical));
-                    topCardText.setText(R.string.hysterical);
+                    passMoodToOuterRingTop(R.string.hysterical, hysterical);
+//
+                    passMoodToOuterRingBottom(R.string.panic, panic);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(panic));
-                    bottomCardText.setText(R.string.panic);
+
 
                     break;
 
                 case "scared":
-                    topCard.setBackgroundColor(getResources().getColor(helpless));
-                    topCardText.setText(R.string.helpless);
+                    passMoodToOuterRingTop(R.string.helpless, helpless);
+//
+                    passMoodToOuterRingBottom(R.string.frightened, frightened);
 
-                    bottomCard.setBackgroundColor(getResources().getColor(frightened));
-                    bottomCardText.setText(R.string.frightened);
+
                     break;
 
 
@@ -406,4 +429,49 @@ public class OuterRingMoods extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View view) {
+
+        switch (view.getId()) {
+            case R.id.love_submenu_submenu_top_card:
+                Intent moodLog = new Intent(this, MoodlogActivity.class);
+
+                TextView mood = findViewById(R.id.love_submenu_submenu_top_text);
+                String moodString = mood.getText().toString();
+                Bundle moodText = new Bundle();
+                moodText.putString("moodString", moodString);
+                moodLog.putExtras(moodText);
+
+                View topSquareView = findViewById(R.id.love_submenu_submenu_top_card);
+                int color = ((ColorDrawable) topSquareView.getBackground()).getColor();
+                Bundle moodColor = new Bundle();
+                moodColor.putInt("colorCode", color);
+                moodLog.putExtras(moodColor);
+
+
+                startActivity(moodLog);
+                break;
+
+
+            case R.id.love_submenu_submenu_bottom_card:
+                Intent moodLogBottom = new Intent(this, MoodlogActivity.class);
+
+                TextView moodBottom = findViewById(R.id.love_submenu_submenu_bottom_text);
+                String moodStringBottom = moodBottom.getText().toString();
+                Bundle moodTextBottom = new Bundle();
+                moodTextBottom.putString("moodString", moodStringBottom);
+                moodLogBottom.putExtras(moodTextBottom);
+
+                View topSquareViewBottom= findViewById(R.id.love_submenu_submenu_bottom_card);
+                int colorBottom = ((ColorDrawable) topSquareViewBottom.getBackground()).getColor();
+                Bundle moodColorBottom = new Bundle();
+                moodColorBottom.putInt("colorCode", colorBottom);
+                moodLogBottom.putExtras(moodColorBottom);
+
+                
+                startActivity(moodLogBottom);
+
+                break;
+        }
+    }
 }
