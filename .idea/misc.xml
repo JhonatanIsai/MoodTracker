@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_data_visualisation.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_love.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_mood_log.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_mood_squares2.xml" value="0.12" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_outer_ring_moods.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_sadness.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_surprise.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_video_view.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/layout/activity_wellness_toolbox.xml" value="0.1" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/menu/activity_main_drawer.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/Kenzie/StudioProjects/MoodTracker/app/src/main/res/menu/side_menu.xml" value="0.1574074074074074" />
         <entry key="app/src/main/res/drawable-v24/signin_alternative_button_gl.xml" value="0.2885" />
         <entry key="app/src/main/res/drawable/color_squares_img.xml" value="0.295" />
         <entry key="app/src/main/res/drawable/forgot_password_button.xml" value="0.2885" />

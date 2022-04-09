@@ -65,9 +65,9 @@
                     android:background="#00FFFFFF"
                     android:text="Joy"
                     android:textColor="@color/white"
+
+
                     android:textSize="32sp"
-
-
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
