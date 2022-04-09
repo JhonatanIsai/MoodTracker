@@ -43,10 +43,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
 
+                android:background="#40000000"
+                android:text="Mood Squares"
                 android:textColor="@color/white"
-                android:textSize="34dp"
                 android:textFontWeight="@integer/material_motion_duration_long_1"
-                android:text="Mood Squares" />
+                android:textSize="34dp" />
         </FrameLayout>
 
         <LinearLayout
@@ -74,10 +75,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
+                    android:background="#40FFFFFF"
+                    android:text="Wellness Toolbox"
                     android:textColor="@color/black"
-                    android:textSize="34dp"
                     android:textFontWeight="@integer/material_motion_duration_long_1"
-                    android:text="Wellness Toolbox" />
+                    android:textSize="34dp" />
 
             </androidx.cardview.widget.CardView>
             <!-- ********* Logbook area ********* -->
@@ -91,16 +93,18 @@
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/log_book" />
+
                 <TextView
                     android:id="@+id/main_logbook_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
+                    android:background="#40FFFFFF"
+                    android:text="Log Book"
                     android:textColor="@color/black"
-                    android:textSize="34dp"
                     android:textFontWeight="@integer/material_motion_duration_long_1"
-                    android:text="Log Book" />
+                    android:textSize="34dp" />
             </androidx.cardview.widget.CardView>
 
 
@@ -123,6 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
+                    android:background="#40FFFFFF"
                     android:text="Historical Data"
                     android:textColor="@color/black"
                     android:textFontWeight="@integer/material_motion_duration_long_1"
