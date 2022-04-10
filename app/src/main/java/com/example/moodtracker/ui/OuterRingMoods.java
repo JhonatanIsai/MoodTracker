@@ -316,6 +316,14 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 
                     break;
 
+                case "rage":
+                    passMoodToOuterRingTop(R.string.hostile, R.color.hostile);
+//
+                    passMoodToOuterRingBottom(R.string.hateful, R.color.hate);
+
+                    break;
+
+
                 /**
                  * This first section will make the changes pertaining to the moods in the Sadness submenu.
                  * */

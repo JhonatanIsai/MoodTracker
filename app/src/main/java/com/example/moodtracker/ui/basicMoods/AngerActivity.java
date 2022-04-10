@@ -47,7 +47,7 @@ public class AngerActivity extends AppCompatActivity implements View.OnClickList
             case R.id.anger_disgust_textView_menu2:
                 Intent disgust = new Intent(this, OuterRingMoods.class);
                 Bundle disgustMood = new Bundle();
-                disgustMood.putString("key", "stunned");
+                disgustMood.putString("key", "disgust");
                 disgust.putExtras(disgustMood);
                 startActivity(disgust);
                 break;
