@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.moodtracker">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodTracker">
+        <activity
+            android:name=".HistoricalDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoricalDataBarGraphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoricalDataPieChartActivity"
+            android:exported="false" />
         <activity
             android:name=".VideoView"
             android:exported="false" />
