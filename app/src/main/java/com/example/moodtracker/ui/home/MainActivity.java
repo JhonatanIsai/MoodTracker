@@ -14,7 +14,7 @@ import android.view.View;
 import com.example.moodtracker.HistoricalDataActivity;
 import com.example.moodtracker.R;
 import com.example.moodtracker.ui.MoodSquaresActivity;
-import com.example.moodtracker.ui.wellness_toolbox;
+import com.example.moodtracker.ui.wellnessToolbox.wellness_toolbox;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private View colorSquares, wellnessToolbox, historicalData;

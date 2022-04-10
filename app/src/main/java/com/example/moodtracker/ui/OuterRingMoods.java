@@ -82,7 +82,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.moodtracker.R;
-import com.example.moodtracker.ui.MoodlogActivity;
+import com.example.moodtracker.ui.moogLog.MoodlogActivity;
 
 public class OuterRingMoods extends AppCompatActivity implements View.OnClickListener {
 

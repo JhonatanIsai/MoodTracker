@@ -14,6 +14,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.moodtracker.R;
+import com.example.moodtracker.ui.basicMoods.AngerActivity;
+import com.example.moodtracker.ui.basicMoods.JoyActivity;
+import com.example.moodtracker.ui.basicMoods.LoveActivity;
+import com.example.moodtracker.ui.basicMoods.SurpriseActivity;
+import com.example.moodtracker.ui.basicMoods.fear;
+import com.example.moodtracker.ui.basicMoods.sadness;
 
 public class MoodSquaresActivity extends AppCompatActivity implements View.OnClickListener {
 

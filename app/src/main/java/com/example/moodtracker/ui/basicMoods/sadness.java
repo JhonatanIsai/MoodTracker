@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui;
+package com.example.moodtracker.ui.basicMoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.moodtracker.R;
+import com.example.moodtracker.ui.OuterRingMoods;
 
 // Make sure that we have the "implements View.OnClickListener"
 public class sadness extends AppCompatActivity implements View.OnClickListener {

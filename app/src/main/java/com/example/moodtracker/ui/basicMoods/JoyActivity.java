@@ -3,7 +3,7 @@
  * *************************************************************************
  *  */
 
-package com.example.moodtracker.ui;
+package com.example.moodtracker.ui.basicMoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.moodtracker.R;
+import com.example.moodtracker.ui.OuterRingMoods;
 
 public class JoyActivity extends AppCompatActivity implements View.OnClickListener {
     private View ethralled_section, elation_section, enthusiastic_section, optimistic_section,

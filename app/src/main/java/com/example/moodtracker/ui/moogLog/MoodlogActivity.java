@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui;
+package com.example.moodtracker.ui.moogLog;
 
 import android.app.Activity;
 import android.os.Bundle;

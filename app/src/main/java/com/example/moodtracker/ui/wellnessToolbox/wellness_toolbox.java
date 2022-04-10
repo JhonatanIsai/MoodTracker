@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui;
+package com.example.moodtracker.ui.wellnessToolbox;
 
 import androidx.appcompat.app.AppCompatActivity;
 

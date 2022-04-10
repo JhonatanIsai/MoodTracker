@@ -25,31 +25,31 @@
             android:name=".ui.VideoView"
             android:exported="false" />
         <activity
-            android:name=".ui.wellness_toolbox"
+            android:name=".ui.wellnessToolbox.wellness_toolbox"
             android:exported="false" />
         <activity
-            android:name=".ui.fear"
+            android:name=".ui.basicMoods.fear"
             android:exported="false" />
         <activity
-            android:name=".ui.AngerActivity"
+            android:name=".ui.basicMoods.AngerActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.sadness"
+            android:name=".ui.basicMoods.sadness"
             android:exported="false" />
         <activity
-            android:name=".ui.MoodlogActivity"
+            android:name=".ui.moogLog.MoodlogActivity"
             android:exported="false" />
         <activity
             android:name=".ui.OuterRingMoods"
             android:exported="false" />
         <activity
-            android:name=".ui.SurpriseActivity"
+            android:name=".ui.basicMoods.SurpriseActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.JoyActivity"
+            android:name=".ui.basicMoods.JoyActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.LoveActivity"
+            android:name=".ui.basicMoods.LoveActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MoodSquaresActivity"
