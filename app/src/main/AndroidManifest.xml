@@ -28,13 +28,16 @@
             android:name=".wellness_toolbox"
             android:exported="false" />
         <activity
-            android:name=".fear"
+            android:name=".ui.fear"
+            android:exported="false" />
+        <activity
+            android:name=".AngerActivity"
             android:exported="false" />
         <activity
             android:name=".sadness"
             android:exported="false" />
         <activity
-            android:name=".Anger"
+            android:name=".ui.MoodlogActivity"
             android:exported="false" />
         <activity
             android:name=".OuterRingMoods"

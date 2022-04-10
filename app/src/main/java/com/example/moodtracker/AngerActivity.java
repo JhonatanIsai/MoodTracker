@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Anger extends AppCompatActivity implements View.OnClickListener {
+public class AngerActivity extends AppCompatActivity implements View.OnClickListener {
 
     private View disgust_section, envy_section, irritable_section, exasperated_section, rage_section;
 

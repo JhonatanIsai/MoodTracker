@@ -81,6 +81,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.moodtracker.ui.MoodlogActivity;
+
 public class OuterRingMoods extends AppCompatActivity implements View.OnClickListener {
 
     private View topCard, bottomCard;
@@ -152,7 +154,6 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
  * */
                 case "peaceful":
 
-
                     passMoodToOuterRingTop(R.string.relieved, relived);
 //
                     passMoodToOuterRingBottom(R.string.satisfied, satisfied);
@@ -186,7 +187,6 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.romantic, romantic);
 
-
                     break;
 /**
  * This first section will make the changes pertaining to the moods in the JOY submenu.
@@ -196,14 +196,12 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.enchanted, enchanted);
 
-
                     break;
 
                 case "elation":
                     passMoodToOuterRingTop(R.string.jubilation, jubilation);
 //
                     passMoodToOuterRingBottom(R.string.euphoric, euphoric);
-
 
                     break;
 
@@ -212,14 +210,12 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.excited, exited);
 
-
                     break;
 
                 case "optimistic":
                     passMoodToOuterRingTop(R.string.hopeful, hopeful);
 //
                     passMoodToOuterRingBottom(R.string.eager, eager);
-
 
                     break;
 
@@ -230,12 +226,10 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 
                     break;
 
-
                 case "cheerful":
                     passMoodToOuterRingTop(R.string.blissful, blissful);
 //
                     passMoodToOuterRingBottom(R.string.jovial, jovial);
-
 
                     break;
 
@@ -244,14 +238,12 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.amused, amused);
 
-
                     break;
 
                 case "content":
                     passMoodToOuterRingTop(R.string.satisfied, satisfied2);
 //
                     passMoodToOuterRingBottom(R.string.pleased, pleased);
-
 
                     break;
 /**
@@ -263,35 +255,34 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
                     passMoodToOuterRingBottom(R.string.dismayed, dismayed);
 
                     break;
+
                 case "confused":
                     passMoodToOuterRingTop(R.string.disillusioned, disillusioned);
 //
                     passMoodToOuterRingBottom(R.string.perplexed, perplexed);
 
-
                     break;
+
                 case "amazed":
                     passMoodToOuterRingTop(R.string.astonished, astonished);
 //
                     passMoodToOuterRingBottom(R.string.awe_struck, awe_struck);
 
-
                     break;
+
                 case "overcome":
                     passMoodToOuterRingTop(R.string.speechless, speechless);
 //
                     passMoodToOuterRingBottom(R.string.astounded, astounded);
 
-
                     break;
+
                 case "moved":
                     passMoodToOuterRingTop(R.string.stimulated, stimulated);
 //
                     passMoodToOuterRingBottom(R.string.touched, touched);
 
-
                     break;
-
 
                 /**
                  * This first section will make the changes pertaining to the moods in the ANGER submenu.
@@ -308,23 +299,21 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.resentful, resentful);
 
-
                     break;
+
                 case "irritable":
                     passMoodToOuterRingTop(R.string.aggravated, Aggravated);
 //
                     passMoodToOuterRingBottom(R.string.annoyed, annoyed);
 
-
                     break;
+
                 case "exasperated":
                     passMoodToOuterRingTop(R.string.frustrated, frustrated);
 //
                     passMoodToOuterRingBottom(R.string.agitated, agitated);
 
-
                     break;
-
 
                 /**
                  * This first section will make the changes pertaining to the moods in the Sadness submenu.
@@ -371,10 +360,7 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.sorrow, sorrow);
 
-
                     break;
-
-
 
                 /**
                  * This first section will make the changes pertaining to the moods in the Sadness submenu.
@@ -385,30 +371,26 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.mortified, mortified);
 
-
                     break;
+
                 case "nervous":
                     passMoodToOuterRingTop(R.string.anxious, anxious);
 //
                     passMoodToOuterRingBottom(R.string.worried, worried);
 
-
-
                     break;
+
                 case "insecure":
                     passMoodToOuterRingTop(R.string.inadequate, inadequate);
 //
                     passMoodToOuterRingBottom(R.string.inferior, inferior);
 
-
-
                     break;
+
                 case "terror":
                     passMoodToOuterRingTop(R.string.hysterical, hysterical);
 //
                     passMoodToOuterRingBottom(R.string.panic, panic);
-
-
 
                     break;
 
@@ -417,15 +399,9 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 //
                     passMoodToOuterRingBottom(R.string.frightened, frightened);
 
-
                     break;
-
-
             }
-
-
         }
-
     }
 
 
@@ -436,17 +412,17 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
             case R.id.love_submenu_submenu_top_card:
                 Intent moodLog = new Intent(this, MoodlogActivity.class);
 
-                TextView mood = findViewById(R.id.love_submenu_submenu_top_text);
-                String moodString = mood.getText().toString();
-                Bundle moodText = new Bundle();
-                moodText.putString("moodString", moodString);
-                moodLog.putExtras(moodText);
-
-                View topSquareView = findViewById(R.id.love_submenu_submenu_top_card);
-                int color = ((ColorDrawable) topSquareView.getBackground()).getColor();
-                Bundle moodColor = new Bundle();
-                moodColor.putInt("colorCode", color);
-                moodLog.putExtras(moodColor);
+//                TextView mood = findViewById(R.id.love_submenu_submenu_top_text);
+//                String moodString = mood.getText().toString();
+//                Bundle moodText = new Bundle();
+//                moodText.putString("moodString", moodString);
+//                moodLog.putExtras(moodText);
+//
+//                View topSquareView = findViewById(R.id.love_submenu_submenu_top_card);
+//                int color = ((ColorDrawable) topSquareView.getBackground()).getColor();
+//                Bundle moodColor = new Bundle();
+//                moodColor.putInt("colorCode", color);
+//                moodLog.putExtras(moodColor);
 
 
                 startActivity(moodLog);
@@ -456,19 +432,19 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
             case R.id.love_submenu_submenu_bottom_card:
                 Intent moodLogBottom = new Intent(this, MoodlogActivity.class);
 
-                TextView moodBottom = findViewById(R.id.love_submenu_submenu_bottom_text);
-                String moodStringBottom = moodBottom.getText().toString();
-                Bundle moodTextBottom = new Bundle();
-                moodTextBottom.putString("moodString", moodStringBottom);
-                moodLogBottom.putExtras(moodTextBottom);
+//                TextView moodBottom = findViewById(R.id.love_submenu_submenu_bottom_text);
+//                String moodStringBottom = moodBottom.getText().toString();
+//                Bundle moodTextBottom = new Bundle();
+//                moodTextBottom.putString("moodString", moodStringBottom);
+//                moodLogBottom.putExtras(moodTextBottom);
+//
+//                View topSquareViewBottom= findViewById(R.id.love_submenu_submenu_bottom_card);
+//                int colorBottom = ((ColorDrawable) topSquareViewBottom.getBackground()).getColor();
+//                Bundle moodColorBottom = new Bundle();
+//                moodColorBottom.putInt("colorCode", colorBottom);
+//                moodLogBottom.putExtras(moodColorBottom);
 
-                View topSquareViewBottom= findViewById(R.id.love_submenu_submenu_bottom_card);
-                int colorBottom = ((ColorDrawable) topSquareViewBottom.getBackground()).getColor();
-                Bundle moodColorBottom = new Bundle();
-                moodColorBottom.putInt("colorCode", colorBottom);
-                moodLogBottom.putExtras(moodColorBottom);
 
-                
                 startActivity(moodLogBottom);
 
                 break;

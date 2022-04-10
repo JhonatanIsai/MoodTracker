@@ -1,10 +1,13 @@
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.moodtracker.OuterRingMoods;
+import com.example.moodtracker.R;
 
 public class fear extends AppCompatActivity implements View.OnClickListener {
 
