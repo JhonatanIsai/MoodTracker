@@ -410,19 +410,27 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 
         switch (view.getId()) {
             case R.id.love_submenu_submenu_top_card:
+                /** The value of the string and the value of the value of the color id will be copied
+                 * from the the mood the user picks. The values will than be passed to the new activity that will be
+                 * started. The values will attached to the new activity through the bundle().
+                 *
+                 * The values of bundle and be retrieved from bundle from the MoodlogActivity by
+                 * using the bundle class. */
                 Intent moodLog = new Intent(this, MoodlogActivity.class);
 
-//                TextView mood = findViewById(R.id.love_submenu_submenu_top_text);
-//                String moodString = mood.getText().toString();
-//                Bundle moodText = new Bundle();
-//                moodText.putString("moodString", moodString);
-//                moodLog.putExtras(moodText);
-//
-//                View topSquareView = findViewById(R.id.love_submenu_submenu_top_card);
-//                int color = ((ColorDrawable) topSquareView.getBackground()).getColor();
-//                Bundle moodColor = new Bundle();
-//                moodColor.putInt("colorCode", color);
-//                moodLog.putExtras(moodColor);
+                // Retrieving value of the string of the mood from the TextView
+                TextView mood = findViewById(R.id.love_submenu_submenu_top_text);
+                String moodString = mood.getText().toString();
+                Bundle moodText = new Bundle();
+                moodText.putString("moodString", moodString);
+                moodLog.putExtras(moodText);
+
+                // retrieving background color
+                View topSquareView = findViewById(R.id.love_submenu_submenu_top_card);
+                int color = ((ColorDrawable) topSquareView.getBackground()).getColor();
+                Bundle moodColor = new Bundle();
+                moodColor.putInt("colorCode", color);
+                moodLog.putExtras(moodColor);
 
 
                 startActivity(moodLog);
@@ -430,19 +438,29 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 
 
             case R.id.love_submenu_submenu_bottom_card:
+
+                /** The value of the string and the value of the value of the color id will be copied
+                 * from the the mood the user picks. The values will than be passed to the new activity that will be
+                 * started. The values will attached to the new activity through the bundle().
+                 *
+                 * The values of bundle and be retrieved from bundle from the MoodlogActivity by
+                 * using the bundle class. */
+
                 Intent moodLogBottom = new Intent(this, MoodlogActivity.class);
 
-//                TextView moodBottom = findViewById(R.id.love_submenu_submenu_bottom_text);
-//                String moodStringBottom = moodBottom.getText().toString();
-//                Bundle moodTextBottom = new Bundle();
-//                moodTextBottom.putString("moodString", moodStringBottom);
-//                moodLogBottom.putExtras(moodTextBottom);
-//
-//                View topSquareViewBottom= findViewById(R.id.love_submenu_submenu_bottom_card);
-//                int colorBottom = ((ColorDrawable) topSquareViewBottom.getBackground()).getColor();
-//                Bundle moodColorBottom = new Bundle();
-//                moodColorBottom.putInt("colorCode", colorBottom);
-//                moodLogBottom.putExtras(moodColorBottom);
+                // Retrieving value of the string of the mood from the TextView
+                TextView moodBottom = findViewById(R.id.love_submenu_submenu_bottom_text);
+                String moodStringBottom = moodBottom.getText().toString();
+                Bundle moodTextBottom = new Bundle();
+                moodTextBottom.putString("moodString", moodStringBottom);
+                moodLogBottom.putExtras(moodTextBottom);
+
+                // retrieving background color
+                View topSquareViewBottom= findViewById(R.id.love_submenu_submenu_bottom_card);
+                int colorBottom = ((ColorDrawable) topSquareViewBottom.getBackground()).getColor();
+                Bundle moodColorBottom = new Bundle();
+                moodColorBottom.putInt("colorCode", colorBottom);
+                moodLogBottom.putExtras(moodColorBottom);
 
 
                 startActivity(moodLogBottom);
