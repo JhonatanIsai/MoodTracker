@@ -22,49 +22,49 @@
             android:name=".HistoricalDataPieChartActivity"
             android:exported="false" />
         <activity
-            android:name=".VideoView"
+            android:name=".ui.VideoView"
             android:exported="false" />
         <activity
-            android:name=".wellness_toolbox"
+            android:name=".ui.wellness_toolbox"
             android:exported="false" />
         <activity
             android:name=".ui.fear"
             android:exported="false" />
         <activity
-            android:name=".AngerActivity"
+            android:name=".ui.AngerActivity"
             android:exported="false" />
         <activity
-            android:name=".sadness"
+            android:name=".ui.sadness"
             android:exported="false" />
         <activity
             android:name=".ui.MoodlogActivity"
             android:exported="false" />
         <activity
-            android:name=".OuterRingMoods"
+            android:name=".ui.OuterRingMoods"
             android:exported="false" />
         <activity
-            android:name=".SurpriseActivity"
+            android:name=".ui.SurpriseActivity"
             android:exported="false" />
         <activity
-            android:name=".JoyActivity"
+            android:name=".ui.JoyActivity"
             android:exported="false" />
         <activity
-            android:name=".LoveActivity"
+            android:name=".ui.LoveActivity"
             android:exported="false" />
         <activity
-            android:name=".MoodSquaresActivity"
+            android:name=".ui.MoodSquaresActivity"
             android:exported="false" />
         <activity
-            android:name=".DataVisualisation"
+            android:name=".ui.DataVisualisation"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_data_visualisation"
             android:theme="@style/Theme.MoodTracker.Fullscreen" />
         <activity
-            android:name=".RegisterUser"
+            android:name=".ui.register.RegisterUser"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.home.MainActivity"
             android:exported="false" />
         <activity
             android:name=".ui.login.LoginActivity"

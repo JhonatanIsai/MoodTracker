@@ -14,9 +14,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.moodtracker.MainActivity;
+import com.example.moodtracker.ui.home.MainActivity;
 import com.example.moodtracker.R;
-import com.example.moodtracker.RegisterUser;
+import com.example.moodtracker.ui.register.RegisterUser;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

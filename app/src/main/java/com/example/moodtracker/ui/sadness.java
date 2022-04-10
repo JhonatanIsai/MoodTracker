@@ -1,10 +1,12 @@
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.moodtracker.R;
 
 // Make sure that we have the "implements View.OnClickListener"
 public class sadness extends AppCompatActivity implements View.OnClickListener {

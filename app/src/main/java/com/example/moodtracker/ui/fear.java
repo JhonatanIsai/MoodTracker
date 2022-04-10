@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.moodtracker.OuterRingMoods;
 import com.example.moodtracker.R;
 
 public class fear extends AppCompatActivity implements View.OnClickListener {

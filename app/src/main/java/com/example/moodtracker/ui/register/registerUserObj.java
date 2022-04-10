@@ -7,7 +7,7 @@
  * just contains parameters that take and pass to firebase
  * */
 
-package com.example.moodtracker;
+package com.example.moodtracker.ui.register;
 
 public class registerUserObj {
     public String firstName;

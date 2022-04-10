@@ -4,7 +4,7 @@
  * *************************************************************************
  */
 
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import static com.example.moodtracker.R.color.Aggravated;
 import static com.example.moodtracker.R.color.Agony;
@@ -81,6 +81,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.moodtracker.R;
 import com.example.moodtracker.ui.MoodlogActivity;
 
 public class OuterRingMoods extends AppCompatActivity implements View.OnClickListener {

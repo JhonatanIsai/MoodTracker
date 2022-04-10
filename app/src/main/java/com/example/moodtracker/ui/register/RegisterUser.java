@@ -4,9 +4,7 @@
  *  */
 
 
-package com.example.moodtracker;
-
-import static android.content.ContentValues.TAG;
+package com.example.moodtracker.ui.register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +12,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -23,10 +20,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.moodtracker.R;
+import com.example.moodtracker.ui.home.MainActivity;
 import com.example.moodtracker.ui.login.LoginActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -93,7 +91,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             // May need to make a different button for banner?
             case R.id.register_logo:
-                startActivity(new Intent(this,MainActivity.class));
+                startActivity(new Intent(this, MainActivity.class));
                 break;
             case R.id.signin_from_register:
                 startActivity(new Intent(this,LoginActivity.class));

@@ -3,13 +3,15 @@
  * *************************************************************************
  *  */
 
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.moodtracker.R;
 
 public class SurpriseActivity extends AppCompatActivity implements View.OnClickListener {
     private View stunned_section, confused_section, amazed_section, overcome_section, moved_section;

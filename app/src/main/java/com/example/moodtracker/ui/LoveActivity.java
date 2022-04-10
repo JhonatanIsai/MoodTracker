@@ -3,13 +3,15 @@
  * *************************************************************************
  *  */
 
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.moodtracker.R;
 
 public class LoveActivity extends AppCompatActivity implements View.OnClickListener {
     private View

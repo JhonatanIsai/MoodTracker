@@ -3,7 +3,7 @@
  * *************************************************************************
  *  */
 
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,8 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.moodtracker.ui.MoodlogActivity;
-import com.example.moodtracker.ui.fear;
+import com.example.moodtracker.R;
 
 public class MoodSquaresActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package com.example.moodtracker;
+package com.example.moodtracker.ui;
 
 import android.annotation.SuppressLint;
 
