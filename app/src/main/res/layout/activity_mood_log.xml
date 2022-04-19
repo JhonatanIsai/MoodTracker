@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="@color/purple_200"
     tools:context=".ui.moogLog.MoodlogActivity">
-
 >//how to change bg color to match mood?
     // From jhonatan: ^^^ i will pass an argument from the mood square with the
     // color value
+
 
 
     <EditText
@@ -25,20 +25,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    //submit button, color?
-
-    //cancel button, color?
-
-    //text field, change dimensions?
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#CAA074"
         android:text="SUBMIT"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
@@ -48,6 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:text="CANCEL"
+        android:textColor="#494949"
+        android:textStyle="bold"
+        android:backgroundTint="#C9CFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.738"
@@ -55,13 +56,29 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:layout_constraintVertical_bias="1.0" />
 
+
+
+    //text field layout
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
+        android:layout_width="360dp"
+        android:layout_marginLeft="25dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        //Date and time display
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -69,20 +86,21 @@
             android:height="200dp"
             android:hint="When ____ happened, I felt ____." />
 
+
     </com.google.android.material.textfield.TextInputLayout>
 
-    //how to insert selected mood from previous page?
-
+<!--    how to insert selected mood from previous page?-->
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="mood goes here"
+        android:text="(mood goes here)"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
