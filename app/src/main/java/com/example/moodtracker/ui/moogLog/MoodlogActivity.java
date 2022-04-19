@@ -12,5 +12,11 @@ public class MoodlogActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood_log);
 
+        addMood();//pass the mood into this function; where to find it? - Kenzie
+
     }
+
+    private void addMood() {//putting this here. not sure how to implement, sorry! - Kenzie
+    }
+
 }
