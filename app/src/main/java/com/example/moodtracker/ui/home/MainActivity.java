@@ -10,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import java.text.DateFormat;
+import java.util.Date;
 
 import com.example.moodtracker.HistoricalDataActivity;
 import com.example.moodtracker.R;
@@ -32,6 +35,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         historicalData = findViewById(R.id.historical_data_parent);
         historicalData.setOnClickListener(this);
+
+        // this part is for the date&time used in the moodLog page -Kenzie
+        onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        TextView tvDateTime = findViewById(R.id.tvDateTime);
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+        tvDateTime.setText(currentDateTimeString);
 
     }
 
