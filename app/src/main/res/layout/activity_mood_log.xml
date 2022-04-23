@@ -25,20 +25,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    //submit button, color?
 
-    //cancel button, color?
+    //the "submit" button
 
-    //text field, change dimensions?
+    //the "cancel" button
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="#CAA074"
         android:text="SUBMIT"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
@@ -48,6 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:text="CANCEL"
+        android:textColor="#494949"
+        android:textStyle="bold"
+        android:backgroundTint="#C9CFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.738"
@@ -55,19 +60,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:layout_constraintVertical_bias="1.0" />
 
+
+    //text field layout
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
+        android:layout_width="360dp"
+        android:layout_marginLeft="25dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:height="200dp"
+            android:height="280dp"
             android:hint="When ____ happened, I felt ____." />
+
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,10 +89,36 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="mood goes here"
+        android:text="(mood goes here)"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTime2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTime2"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.186" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
