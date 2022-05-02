@@ -67,7 +67,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return dateFormat.format(date);
     }
 
-    // queries for interacting
+    // queries for interacting //
     public void addMood(String mood, String description){
         //getting the the getWritableDatabe to write to the table
         SQLiteDatabase db = this.getWritableDatabase();
@@ -87,14 +87,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             System.out.println("added");
             System.out.println(getDate() + " "+ getTime());
         }
-        // Will notify the user if the new submission was successful
-//        if(result == -1){
-//            Toast.makeText(context, "DB Update Failed", Toast.LENGTH_SHORT).show();
-//        }else{
-//            Toast.makeText(context, "DB Update Success", Toast.LENGTH_SHORT).show();
-//        }
-
-
-
     }
+
 }
