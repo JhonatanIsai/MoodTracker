@@ -135,6 +135,8 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
 
         TextView cardText = findViewById(R.id.love_submenu_submenu_bottom_text);
         cardText.setText(mood);
+
+
     }
 
 
@@ -430,6 +432,7 @@ public class OuterRingMoods extends AppCompatActivity implements View.OnClickLis
                 // Retrieving value of the string of the mood from the TextView
                 TextView mood = findViewById(R.id.love_submenu_submenu_top_text);
                 String moodString = mood.getText().toString();
+
                 Bundle moodText = new Bundle();
                 moodText.putString("moodString", moodString);
                 moodLog.putExtras(moodText);

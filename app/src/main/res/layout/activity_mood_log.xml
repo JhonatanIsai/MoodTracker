@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mood_log_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
@@ -11,19 +12,23 @@
     // From jhonatan: ^^^ i will pass an argument from the mood square with the
     // color value
 
-
-    <EditText
+    <TextView
         android:id="@+id/editTextTextPersonName"
         android:layout_width="210dp"
         android:layout_height="45dp"
         android:layout_marginTop="84dp"
         android:ems="10"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:inputType="textPersonName"
         android:text="Why do you feel "
-        android:textSize="24sp"
+        android:textSize="30dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
 
     //the "submit" button
@@ -34,7 +39,7 @@
     //text field layout
 
     <Button
-        android:id="@+id/moodLog_submit"
+        android:id="@+id/mood_log_submit"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,12 +53,13 @@
         app:backgroundTint="@null"
 
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/moodLog_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/mood_log_cancel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate4"
+        tools:ignore="UnknownId" />
 
     <Button
-        android:id="@+id/moodLog_cancel"
+        android:id="@+id/mood_log_cancel"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,13 +82,17 @@
 
     //how to insert selected mood from previous page?
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
+    <TextView
+        android:id="@+id/mood_goes_here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="(mood goes here)"
+        android:text="(mood)"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,6 +155,7 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mood_log_main_textfield"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="bottom"
@@ -156,6 +167,8 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
