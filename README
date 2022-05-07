@@ -1,0 +1,32 @@
+***** Mood Tracker*****
+
+The moodTracker app, is build to help people keep track of their
+moods to help them identify and fix their behavior to improve their moods.
+The application will keep track of the user's moods over time and provide valiable data
+to the user.
+
+The Due to the nature of android studio running applications in emulators,
+the Emulator must be, created with specific qualities such as the ones bellow.
+
+Device : Pixel 4
+    Resolution: 1080 X 2280
+    dp        : 393 X 830
+    API       : 24
+OS     : Android 7.0 X86
+Android: Nougat
+
+The virtual device used for development was created with
+12 GB of storage.
+************************************
+
+The virtual device must have the latest version of
+google-play service installed, this can be done through
+the devices settings menu just like a physical device
+would update
+************************************
+A list of all views used in the project can be found under the
+AndroidManifest.xml file
+
+
+
+
